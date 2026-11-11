@@ -1,0 +1,223 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "Cloudflare",
+      "quote": "Cloudflare (\"Company\") commits to provide a level of service for Business Customers",
+      "section": "1. Business Service Level Agreement",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "information, tools, features and functionality located on Cloudflare.com",
+        "Cloudflare APIs",
+        "software or other websites that interface with Cloudflare.com or its APIs"
+      ],
+      "quote": "\"Service\" means, collectively, the information, tools, features and functionality located on Cloudflare.com, through any Cloudflare APIs, or through any software or other websites that interface with Cloudflare.com or its APIs.",
+      "section": "2.13",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": "Business",
+      "quote": "\"Business Level\" is a specific service plan provided by Company.",
+      "section": "2.3",
+      "absent": false,
+      "missing_reason": null
+    },
+    "uptime_commitment_pct": {
+      "value": "100",
+      "quote": "The Service will serve Customer Content 100% of the time without qualification.",
+      "section": "1.1",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "calendar_month",
+      "quote": "\"Scheduled Availability\" is the total number of minutes in the month minus any Customer Planned Downtime, and downtime caused by Force Majeure.",
+      "section": "2.12",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not state a time zone for measuring the month."
+    },
+    "downtime_definition": {
+      "value": null,
+      "quote": "\"Unscheduled Service Outage\" are those interruptions to the Service that have not been previously communicated to the Customer and that result in the Customer\u2019s application being unavailable to its customers or users. [\u2026] Affected Customer Ratio = (Unique visitors as measured by IP address affected by Unscheduled Service Outage) \u00f7 Total unique visitors as measured by IP address",
+      "section": "2.16, 2.2",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": null,
+      "quote": "Service Credit = (Outage Period minutes * Affected Customer Ratio) \u00f7 Scheduled Availability minutes",
+      "section": "6.1",
+      "absent": true,
+      "missing_reason": "The SLA uses a continuous formula for Service Credit rather than a table of credit tiers."
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "\"Service Credit\" is the percentage of the monthly service fees for the Service that is credited to Customer for a validated Claim.",
+      "section": "2.14",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": "The total amount of Service Credits awarded in any twelve (12) month period shall not, under any circumstance, exceed one (1) month of a Customer\u2019s cumulative total monthly service fees.",
+      "section": "5.3",
+      "absent": false,
+      "missing_reason": null
+    },
+    "min_credit": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not state any minimum service credit amount."
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "force_majeure",
+          "description": "Downtime minutes resulting from events or conditions beyond Company's reasonable control, and performance or availability issues due to factors outside Company's reasonable control.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_infrastructure",
+          "description": "Issues that resulted from Customer's or third party hardware or software.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Issues that resulted from actions or inactions of Customer or third parties, or attributable to acts or omissions of Customer or its employees, agents, contractors, vendors, or anyone accessing the Service via Customer's Authorized Users' accounts or equipment.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Issues caused by Customer's use of the Service after Company advised Customer to modify its use, if Customer did not modify its use as advised.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "sandbox_or_free_plan",
+          "description": "Issues during beta and trial Service (as determined by Company).",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Customer Planned Downtime: downtime specified by the Customer to be excluded from calculation of an Outage Period, when the Customer has requested Service access suspended.",
+          "machine_checkable": false
+        }
+      ],
+      "quote": "(a) Due to factors outside Company\u2019s reasonable control; [\u2026] (b) That resulted from Customer\u2019s or third party hardware or software; [\u2026] (c) That resulted from actions or inactions of Customer or third parties; [\u2026] (d) Caused by Customer\u2019s use of the Service after Company advised Customer to modify its use of the Service, if Customer did not modify its use as advised; [\u2026] (e) During beta and trial Service (as determined by Company);",
+      "section": "4.1; 2.7; 2.9; 2.12; 2.16",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "support_ticket_during_incident",
+        "other"
+      ],
+      "quote": "In order to be eligible to submit a Claim with respect to any Incident, the Customer must first have notified Customer Support of the Incident, using the procedures set forth by Company, within five business days following the Incident.",
+      "section": "3.2 Service Credit Claims",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "other",
+        "value": 1,
+        "timezone": null
+      },
+      "quote": "In order for Company to consider a Claim, Customer must submit the Claim, including sufficient evidence to support the Claim, by the end of the billing month following the billing month in which the Incident which is the subject of the Claim occurs.",
+      "section": "3.4 Service Credit Claims",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "Customer Support",
+        "required_fields": [
+          "incident_times",
+          "affected_resources",
+          "other"
+        ],
+        "subject_line": null
+      },
+      "quote": "To submit a Claim, Customer must contact Customer Support and provide notice of its intention to submit a Claim. Customer must provide to Customer Support all reasonable details regarding the Claim, including but not limited to, detailed descriptions of the Incident(s), the duration of the Incident, network traceroutes, the URL(s) affected and any attempts made by Customer to resolve the Incident.",
+      "section": "3.3 Service Credit Claims",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Service Credits are Customer's sole and exclusive remedy for any violation of this SLA.",
+      "section": "5.2 Service Credits",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "06845fb938bbfcbad26281fe85d8104e2d9d71c18e5a9be759f33e86c6d30250",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 2,
+  "service": "Cloudflare Business",
+  "plan": "Business",
+  "extracted_at": "2026-10-31T01:54:13.738150+00:00",
+  "calls": 3,
+  "conversion_notes": [
+    "downtime_definition: 1 validation error for Cited[Metric]"
+  ],
+  "usage": {
+    "input_tokens": 15856,
+    "output_tokens": 2416
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": true,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": true,
+    "min_credit": false,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "verified",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "missing",
+    "credit_tiers": "absent",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "absent",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0559,
+  "split": "tuning"
+}

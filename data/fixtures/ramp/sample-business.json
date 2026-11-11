@@ -1,0 +1,28 @@
+{
+  "note": "Simulated Ramp business for the demo, saved in the response shapes of Ramp's public Developer API reference (GET /developer/v1/business, /vendors, /transactions). Not a real business. Fields the import does not read (memo, merchant_descriptor, amount) are included to show they are ignored.",
+  "as_of": "2026-10-31T00:00:00Z",
+  "business": {"id": "demo-business-lumen", "business_name_on_card": "Lumen Freight (demo)", "business_name_legal": "Lumen Freight Inc. (demo)"},
+  "vendors": {
+    "data": [
+      {"id": "demo-v-atlassian", "name": "Atlassian Pty Ltd", "is_active": true, "billing_frequency": "ANNUAL"},
+      {"id": "demo-v-github", "name": "GitHub, Inc.", "is_active": true, "billing_frequency": "MONTHLY"},
+      {"id": "demo-v-figma", "name": "Figma", "is_active": true, "billing_frequency": "ANNUAL"},
+      {"id": "demo-v-cloudflare", "name": "Cloudflare, Inc.", "is_active": false, "billing_frequency": "MONTHLY"}
+    ],
+    "page": {"next": null}
+  },
+  "transactions": {
+    "data": [
+      {"id": "demo-t-1", "merchant_name": "Atlassian", "merchant_descriptor": "ATLASSIAN* JIRA PREMIUM", "memo": "Jira Premium renewal", "amount": 27000, "state": "CLEARED", "user_transaction_time": "2025-11-14T16:02:00Z"},
+      {"id": "demo-t-2", "merchant_name": "Atlassian", "merchant_descriptor": "ATLASSIAN* JIRA PREMIUM", "memo": "Premium seats added", "amount": 4500, "state": "CLEARED", "user_transaction_time": "2026-08-03T09:41:00Z"},
+      {"id": "demo-t-3", "merchant_name": "Atlassian", "merchant_descriptor": "ATLASSIAN* JIRA PREMIUM", "memo": "", "amount": 4500, "state": "DECLINED", "user_transaction_time": "2026-08-02T09:40:00Z"},
+      {"id": "demo-t-4", "merchant_name": "Atlassian", "merchant_descriptor": "ATLASSIAN* JIRA STANDARD", "memo": "Old Standard plan", "amount": 9000, "state": "CLEARED", "user_transaction_time": "2025-06-10T12:00:00Z"},
+      {"id": "demo-t-5", "merchant_name": "GitHub", "merchant_descriptor": "GITHUB* ENTERPRISE", "memo": "Enterprise Cloud", "amount": 2100, "state": "CLEARED", "user_transaction_time": "2026-08-01T00:10:00Z"},
+      {"id": "demo-t-6", "merchant_name": "GitHub", "merchant_descriptor": "GITHUB* ENTERPRISE", "memo": "", "amount": 2100, "state": "CLEARED", "user_transaction_time": "2026-09-01T00:10:00Z"},
+      {"id": "demo-t-7", "merchant_name": "GitHub", "merchant_descriptor": "GITHUB* ENTERPRISE", "memo": "", "amount": 2100, "state": "CLEARED", "user_transaction_time": "2026-10-01T00:10:00Z"},
+      {"id": "demo-t-8", "merchant_name": "Figma", "merchant_descriptor": "FIGMA", "memo": "Design seats", "amount": 5400, "state": "CLEARED", "user_transaction_time": "2026-03-01T08:00:00Z"},
+      {"id": "demo-t-9", "merchant_name": "Slack Technologies", "merchant_descriptor": "SLACK T0123", "memo": "", "amount": 1800, "state": "CLEARED", "user_transaction_time": "2026-09-15T08:00:00Z"}
+    ],
+    "page": {"next": null, "total_count": 9, "total_count_capped": false}
+  }
+}

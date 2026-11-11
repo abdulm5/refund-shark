@@ -1,0 +1,239 @@
+{
+  "note": "Eight distinct agreements: six tuning, two held out. Tune only on the tuning split; freeze before one held-out batch of three runs per document.",
+  "frozen_config": {
+    "frozen": true,
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "cited-terms-v4",
+    "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+    "effort": "medium",
+    "frozen_at": "2026-10-31T01:57:49.673089+00:00"
+  },
+  "documents": [
+    {
+      "id": "atlassian",
+      "vendor": "Atlassian",
+      "service": "Jira / Confluence Cloud",
+      "split": "tuning",
+      "url": "https://www.atlassian.com/legal/sla",
+      "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+      "raw_path": "../../.cache/research/atlassian.html",
+      "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+      "source_hash": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "machine_drafted",
+      "gold_path": "atlassian-jira-premium.draft.json",
+      "extraction_paths": [
+        "../extractions/atlassian/run1.json",
+        "../extractions/atlassian/run2.json",
+        "../extractions/atlassian/run3.json"
+      ],
+      "scenario_paths": [],
+      "note": "Draft Jira Premium labels were written against verbatim excerpts of the SLA and its compensation procedure (data/sources). A person must confirm every value and quote against both full pages before scoring.",
+      "selection": {
+        "service": "Jira",
+        "plan": "Premium"
+      },
+      "title": "Atlassian Service Level Agreement",
+      "supplement": {
+        "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+        "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+        "raw_path": "../../.cache/research/atlassian-compensation.html",
+        "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+        "source_hash": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050"
+      },
+      "scenario_ids": [
+        "jira-sept-claim",
+        "jira-sept-missing-evidence",
+        "jira-sept-maintenance",
+        "jira-oct-degraded"
+      ],
+      "scenario_snapshot": {
+        "path": "atlassian-scenarios.pre-audit.json",
+        "sha256": "fa45c3fa37d4dbd4fe3626ccc78e22832aa481e1e203238c63913b27dd88a1b6",
+        "note": "Captured on 2026-11-10 before AI-reference corrections to demo fixtures; preserves the original four scenario inputs and saved report. This is not a new held-out dataset."
+      }
+    },
+    {
+      "id": "github",
+      "vendor": "GitHub",
+      "service": "Enterprise Cloud",
+      "split": "tuning",
+      "url": "https://github.com/customer-terms/github-online-services-sla",
+      "retrieved_at": "2026-10-30T05:22:48.327151+00:00",
+      "raw_path": "../../.cache/research/github.html",
+      "raw_sha256": "d1c402a4f47a41ce6e6040cb953e1fe3942d5eefb84885f72eb44a2baf3b079b",
+      "source_hash": "f755a8b3d9041bbc49c33d94484e1409c936e308dcd09053ef5cd891a0491b21",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/github/run1.json",
+        "../extractions/github/run2.json",
+        "../extractions/github/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "GitHub Enterprise Cloud",
+        "plan": "Enterprise"
+      },
+      "title": "GitHub Enterprise Cloud service level agreement"
+    },
+    {
+      "id": "cloudflare",
+      "vendor": "Cloudflare",
+      "service": "Business",
+      "split": "tuning",
+      "url": "https://www.cloudflare.com/business-sla/",
+      "retrieved_at": "2026-10-30T05:22:48.411454+00:00",
+      "raw_path": "../../.cache/research/cloudflare.html",
+      "raw_sha256": "f34bd95cf42a39d72696566b13569de24ee60d2f40c1509bb4629b5267c40c2f",
+      "source_hash": "06845fb938bbfcbad26281fe85d8104e2d9d71c18e5a9be759f33e86c6d30250",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/cloudflare/run1.json",
+        "../extractions/cloudflare/run2.json",
+        "../extractions/cloudflare/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "Cloudflare Business",
+        "plan": "Business"
+      },
+      "title": "Cloudflare Business service level agreement"
+    },
+    {
+      "id": "aws-waf",
+      "vendor": "AWS",
+      "service": "WAF",
+      "split": "tuning",
+      "url": "https://aws.amazon.com/waf/sla/",
+      "retrieved_at": "2026-10-30T05:22:47.956445+00:00",
+      "raw_path": "../../.cache/research/aws-waf.html",
+      "raw_sha256": "cff7852f0df0c5ae761c1d7abd65ae56d3e86ca8890c3f4ac6795221fdc39771",
+      "source_hash": "5d8d5eca0ff2583049a611459358004f7ced76ac739385f4af0afadbfeac6ad5",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/aws-waf/run1.json",
+        "../extractions/aws-waf/run2.json",
+        "../extractions/aws-waf/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "AWS WAF",
+        "plan": "Standard"
+      },
+      "title": "AWS WAF service level agreement"
+    },
+    {
+      "id": "aws-cloudfront",
+      "vendor": "AWS",
+      "service": "CloudFront",
+      "split": "tuning",
+      "url": "https://aws.amazon.com/cloudfront/sla/",
+      "retrieved_at": "2026-10-30T05:22:48.052858+00:00",
+      "raw_path": "../../.cache/research/aws-cloudfront.html",
+      "raw_sha256": "df7a957a31fbb7b58d2662137754a0c1856455a3f9ff0390554b4cbd381afbb1",
+      "source_hash": "178dbc8f45f54d7de36bf63c720c16b5d35ed9be264c993d764fea75df79f798",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/aws-cloudfront/run1.json",
+        "../extractions/aws-cloudfront/run2.json",
+        "../extractions/aws-cloudfront/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "Amazon CloudFront",
+        "plan": "Standard"
+      },
+      "title": "AWS CloudFront service level agreement"
+    },
+    {
+      "id": "digitalocean-droplets",
+      "vendor": "DigitalOcean",
+      "service": "CPU Droplets",
+      "split": "tuning",
+      "url": "https://www.digitalocean.com/sla/cpu-droplets",
+      "retrieved_at": "2026-10-30T05:22:48.886250+00:00",
+      "raw_path": "../../.cache/research/digitalocean-droplets.html",
+      "raw_sha256": "053c668030c08fac97423ccd2ba1447a169bffc6ba33635014b4778ea36ac1bc",
+      "source_hash": "07d56205352e178c943d8242ed0a98b78fa5b510ce0909485d8ecc6060d5412b",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/digitalocean-droplets/run1.json",
+        "../extractions/digitalocean-droplets/run2.json",
+        "../extractions/digitalocean-droplets/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "CPU Droplets",
+        "plan": "Standard"
+      },
+      "title": "DigitalOcean CPU Droplets service level agreement"
+    },
+    {
+      "id": "google-cloud-dns",
+      "vendor": "Google Cloud",
+      "service": "Cloud DNS",
+      "split": "held_out",
+      "url": "https://cloud.google.com/dns/sla",
+      "retrieved_at": "2026-10-30T05:22:48.445829+00:00",
+      "raw_path": "../../.cache/research/google-cloud-dns.html",
+      "raw_sha256": "3d275ddca681bb1348fee10f45bbaa3b1e3ef8ff622022ee04d015158b3e91bb",
+      "source_hash": "3a78eb1d1acbe15079ade7dc3493e2f1924992dd5c7b6df6a3ce1294312d1a51",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/google-cloud-dns/run1.json",
+        "../extractions/google-cloud-dns/run2.json",
+        "../extractions/google-cloud-dns/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "Cloud DNS",
+        "plan": "Standard"
+      },
+      "title": "Google Cloud Cloud DNS service level agreement"
+    },
+    {
+      "id": "expo-eas",
+      "vendor": "Expo",
+      "service": "EAS Enterprise",
+      "split": "held_out",
+      "url": "https://expo.dev/services/sla",
+      "retrieved_at": "2026-10-30T05:22:48.196038+00:00",
+      "raw_path": "../../.cache/research/expo-eas.html",
+      "raw_sha256": "dd7f4b6c84689f6b6f8ff847e93383c2af2eb787c2e3705e9d7ffad8bf69cfa2",
+      "source_hash": "dcac20a41a8acf2a5fedf323c552788b0ef5a065f72a1155908c714104dc5a5d",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "review_status": "not_labeled",
+      "gold_path": null,
+      "extraction_paths": [
+        "../extractions/expo-eas/run1.json",
+        "../extractions/expo-eas/run2.json",
+        "../extractions/expo-eas/run3.json"
+      ],
+      "scenario_paths": [],
+      "selection": {
+        "service": "EAS",
+        "plan": "Enterprise"
+      },
+      "title": "Expo EAS Enterprise service level agreement"
+    }
+  ],
+  "tuning_history": [
+    {
+      "prompt_version": "cited-terms-v3",
+      "path": "../extractions/_tuning/cited-terms-v3/atlassian-run1.json",
+      "finding": "credit tiers silently null; free-text prerequisites, claim fields, exclusion kinds; deadline time zone inferred"
+    }
+  ]
+}

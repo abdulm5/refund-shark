@@ -1,0 +1,468 @@
+{
+  "duration_seconds": 150,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio": "silent; ready for the creator’s voice-over",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 7,
+      "kind": "intro",
+      "title": "Find the credit. Prove the claim."
+    },
+    {
+      "start": 7,
+      "end": 15,
+      "shot": "01-overview",
+      "chapter": "THE OPPORTUNITY",
+      "title": "Your contracts have teeth.",
+      "note": "One-click local demo. No provider credentials needed.",
+      "cameras": [
+        [
+          0,
+          [
+            0,
+            0,
+            1440
+          ]
+        ],
+        [
+          2,
+          [
+            255,
+            68,
+            1160
+          ]
+        ],
+        [
+          7,
+          [
+            285,
+            84,
+            1075
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 15,
+      "end": 24,
+      "shot": "14b-terms",
+      "chapter": "READ THE AGREEMENT",
+      "title": "Start with what the contract actually says.",
+      "note": "Saved Atlassian agreement · terms linked to source quotations",
+      "cameras": [
+        [
+          0,
+          [
+            280,
+            20,
+            1110
+          ]
+        ],
+        [
+          3,
+          [
+            290,
+            240,
+            1095
+          ]
+        ],
+        [
+          8,
+          [
+            645,
+            337,
+            740
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 24,
+      "end": 34,
+      "shot": "03-excluded",
+      "chapter": "SCAN THE PORTFOLIO",
+      "title": "One outage. Three different outcomes.",
+      "note": "Northstar: $900 supported  /  Harbor: missing evidence  /  Cobalt: excluded",
+      "cameras": [
+        [
+          0,
+          [
+            250,
+            90,
+            1165
+          ]
+        ],
+        [
+          3,
+          [
+            270,
+            170,
+            1130
+          ]
+        ],
+        [
+          9,
+          [
+            282,
+            200,
+            1105
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 34,
+      "end": 43,
+      "shot": "03-excluded",
+      "chapter": "EXCLUDE UNSUPPORTED CLAIMS",
+      "title": "No qualifying downtime. No claim.",
+      "note": "Cobalt’s error minutes fall inside confirmed scheduled maintenance.",
+      "cameras": [
+        [
+          0,
+          [
+            265,
+            430,
+            1130
+          ]
+        ],
+        [
+          3,
+          [
+            290,
+            480,
+            1080
+          ]
+        ],
+        [
+          8,
+          [
+            285,
+            495,
+            1085
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 43,
+      "end": 51,
+      "shot": "04-missing",
+      "chapter": "IDENTIFY WHAT IS MISSING",
+      "title": "A missing ticket stops the request.",
+      "note": "Harbor stays out of the supported total until the required evidence arrives.",
+      "cameras": [
+        [
+          0,
+          [
+            265,
+            270,
+            1135
+          ]
+        ],
+        [
+          3,
+          [
+            290,
+            420,
+            1090
+          ]
+        ],
+        [
+          7,
+          [
+            297,
+            445,
+            1060
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 51,
+      "end": 63,
+      "shot": "05-ticket-arrived",
+      "chapter": "RECALCULATE WHEN EVIDENCE ARRIVES",
+      "title": "$900 → $1,380. Evidence changes the answer.",
+      "note": "Harbor’s timely support ticket unlocks a $480 proposal. Cobalt still stays excluded.",
+      "cameras": [
+        [
+          0,
+          [
+            245,
+            235,
+            1170
+          ]
+        ],
+        [
+          3,
+          [
+            265,
+            480,
+            1140
+          ]
+        ],
+        [
+          7,
+          [
+            275,
+            485,
+            660
+          ]
+        ],
+        [
+          11,
+          [
+            280,
+            492,
+            640
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 63,
+      "end": 77,
+      "shot": "06-calculation",
+      "chapter": "EXPLAIN EVERY DOLLAR",
+      "title": "62 minutes. A 10% tier. A $480 request.",
+      "note": "Contractual metric + customer evidence + affected-product invoice",
+      "cameras": [
+        [
+          0,
+          [
+            270,
+            40,
+            1140
+          ]
+        ],
+        [
+          5,
+          [
+            300,
+            80,
+            1080
+          ]
+        ],
+        [
+          9,
+          [
+            308,
+            145,
+            1060
+          ]
+        ],
+        [
+          13,
+          [
+            310,
+            185,
+            1050
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 77,
+      "end": 86,
+      "shot": "07-request",
+      "chapter": "PREPARE THE REQUEST",
+      "title": "A draft finance can actually review.",
+      "note": "Account, incident, calculation, and original clause—in one prepared request.",
+      "cameras": [
+        [
+          0,
+          [
+            300,
+            50,
+            1070
+          ]
+        ],
+        [
+          3,
+          [
+            310,
+            150,
+            1045
+          ]
+        ],
+        [
+          8,
+          [
+            315,
+            260,
+            1035
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 86,
+      "end": 94,
+      "shot": "08-accept-before",
+      "chapter": "KEEP FINANCE IN CONTROL",
+      "title": "Review first. Then save the draft.",
+      "note": "Accepting a proposal does not approve or send the claim.",
+      "cameras": [
+        [
+          0,
+          [
+            280,
+            350,
+            1110
+          ]
+        ],
+        [
+          2,
+          [
+            290,
+            405,
+            1090
+          ]
+        ],
+        [
+          7,
+          [
+            295,
+            410,
+            1080
+          ]
+        ]
+      ],
+      "action": "accept"
+    },
+    {
+      "start": 94,
+      "end": 99,
+      "kind": "challenge_title",
+      "title": "Now try to break it."
+    },
+    {
+      "start": 99,
+      "end": 112,
+      "shot": "12-ticket-challenge",
+      "chapter": "CHALLENGE THE CLAIM",
+      "title": "Remove the ticket. $480 becomes $0.",
+      "note": "The actual engine recalculates a copy. The saved draft stays untouched.",
+      "cameras": [
+        [
+          0,
+          [
+            285,
+            65,
+            1100
+          ]
+        ],
+        [
+          3,
+          [
+            650,
+            145,
+            735
+          ]
+        ],
+        [
+          8,
+          [
+            658,
+            205,
+            720
+          ]
+        ],
+        [
+          12,
+          [
+            657,
+            230,
+            720
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 112,
+      "end": 122,
+      "shot": "13-duplicate-challenge",
+      "chapter": "MAKE DUPLICATES HARMLESS",
+      "title": "Same evidence. Same $480.",
+      "note": "Importing a measurement twice does not double the service credit.",
+      "cameras": [
+        [
+          0,
+          [
+            285,
+            60,
+            1100
+          ]
+        ],
+        [
+          3,
+          [
+            655,
+            145,
+            725
+          ]
+        ],
+        [
+          9,
+          [
+            657,
+            193,
+            720
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 122,
+      "end": 133,
+      "kind": "proof",
+      "title": "Take the evidence with you."
+    },
+    {
+      "start": 133,
+      "end": 143,
+      "shot": "16-credit-matched",
+      "chapter": "CLOSE THE LOOP",
+      "title": "Confirm the credit on a later invoice.",
+      "note": "Separate Northstar replay · simulated $900 invoice credit · no real submission",
+      "cameras": [
+        [
+          0,
+          [
+            280,
+            260,
+            1100
+          ]
+        ],
+        [
+          3,
+          [
+            295,
+            350,
+            1080
+          ]
+        ],
+        [
+          9,
+          [
+            302,
+            380,
+            1060
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 143,
+      "end": 150,
+      "kind": "outro",
+      "title": "Models read. Code decides. Finance approves."
+    }
+  ]
+}

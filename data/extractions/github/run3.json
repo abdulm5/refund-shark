@@ -1,0 +1,279 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "GitHub",
+      "quote": "GitHub Online Services SLA",
+      "section": "Title",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "GitHub Enterprise Cloud"
+      ],
+      "quote": "B. GitHub Enterprise Cloud",
+      "section": "5. Services Covered by SLA",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": false,
+      "missing_reason": "The source does not name an Enterprise plan or distinguish plans; the SLA applies per Service."
+    },
+    "uptime_commitment_pct": {
+      "value": "99.9",
+      "quote": "GitHub commits to maintain at least 99.9% Uptime for the applicable GitHub service.",
+      "section": "2. Uptime Commitment",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "calendar_quarter",
+      "quote": "\u201cApplicable Period\u201d means the calendar quarter in which a Service Credit is owed.",
+      "section": "1. Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": "",
+      "quote": null,
+      "section": null,
+      "absent": false,
+      "missing_reason": "The source does not state a time zone for measuring the period."
+    },
+    "downtime_definition": {
+      "value": {
+        "kind": "request_error_rate",
+        "interval_seconds": 60,
+        "error_threshold_pct": "5",
+        "description": "Downtime is a period where either (i) the error rate exceeds 5% in a given minute for a Service feature or (ii) the Service was unavailable as determined by a combination of GitHub's internal and external monitoring systems. Downtime excludes Scheduled Downtime and the Section 4 limitations and exclusions.",
+        "covered_experiences": [
+          "git Operations",
+          "Issues",
+          "Pages",
+          "Pull Requests",
+          "Webhooks",
+          "API requests to these components"
+        ]
+      },
+      "quote": "\u201cDowntime\u201d is a period of time where either (i) the error rate exceeds five percent (5%) in a given minute for a Service feature or (ii) the Service was unavailable as determined by a combination of GitHub\u2019s internal and external monitoring systems. [\u2026] \u201cService Feature\u201d is one of the following components of GitHub Enterprise Cloud: git Operations, Issues, Pages, Pull Requests, Webhooks, and API requests to these components.",
+      "section": "5. Services Covered by SLA, B. GitHub Enterprise Cloud",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "99.5",
+          "upper": "99.9",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "5"
+        },
+        {
+          "lower": "99.0",
+          "upper": "99.5",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "10"
+        },
+        {
+          "lower": "0",
+          "upper": "99.0",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "25"
+        }
+      ],
+      "quote": "| 99.5% <= Uptime < 99.9% | 5% | [\u2026] | 99.0% <= Uptime < 99.5% | 10% | [\u2026] | Uptime < 99.0% | 25% |",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "\u201cApplicable Service Fees\u201d means the total fees paid by Customer for a Service that are applied to the Applicable Period in which a Service Credit is owed.",
+      "section": "1. Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": "Service Credits cannot be exchanged into cash, and are limited to a maximum of ninety (90) days of paid service per calendar quarter.",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": "The cap is expressed as 90 days of paid service per calendar quarter, not as a percentage of fees, so it cannot be expressed as a percentage cap."
+    },
+    "min_credit": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not state any minimum credit amount."
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "scheduled_maintenance",
+          "description": "Scheduled Downtime for network, hardware, or Service maintenance or upgrades, with at least five days' notice unless a bona fide emergency prevents it.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "force_majeure",
+          "description": "Factors outside reasonable control, e.g. natural disaster, war, terrorism, riots, government action, or network or device failure external to GitHub's data centers.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "sandbox_or_free_plan",
+          "description": "A Preview, or a purchase made with a subscription credit.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "third_party_products",
+          "description": "Use of services, hardware, or software not provided by GitHub, including inadequate bandwidth or third-party software or services.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Customer's unauthorized action, or lack of action when required to act.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "unauthorized_use",
+          "description": "Anyone gaining network access through unauthorized use of the customer's credentials or equipment, or the customer's failure to follow appropriate security practices.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Customer's violation of applicable Acceptable Use Policies or the Agreement.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Use of the Service inconsistent with its features and functionality (e.g. unsupported operations) or with published guidance.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_data",
+          "description": "Faulty input, instructions, or arguments, e.g. requests to access nonexistent files.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "GitHub's throttling of suspected abusive behavior or hacked accounts.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Rate limits, performance degradation, or other latency issues without actual service unavailability, except services with an explicit performance-based Service Level.",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Customer's use of a Service after being advised to modify use, if the customer did not modify it as advised.",
+          "machine_checkable": false
+        }
+      ],
+      "quote": "Downtime does not include Scheduled Downtime, and Downtime does not include unavailability of a Service due to limitations or exclusions identified in Section 4 (\u201cLimitations and Exclusions\u201d). [\u2026] A. Due to factors outside our reasonable control [\u2026] B. For a Preview, or a purchase made with a subscription credit; [\u2026] C. That result from the use of services, hardware, or software not provided by us [\u2026] D. That result from your unauthorized action, or from your lack of action when required to act; [\u2026] E. That result from anyone gaining access to our network by unauthorized use of your credentials or equipment [\u2026] F. That result from your violation of applicable Acceptable Use Policies or your Agreement; [\u2026] G. That result from your use of the Service in a manner inconsistent with the features and functionality of the Service [\u2026] H. That result from faulty input, instructions, or arguments [\u2026] I. That result from our throttling of suspected abusive behavior or hacked accounts; [\u2026] J. That result from rate limits, performance degradation, or other latency issues without actual service unavailability [\u2026] K. Caused by your use of a Service after we advised you to modify your use of the Service, if you did not modify your use as advised.",
+      "section": "1. Definitions; 4. Limitations and Exclusions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "account_fully_paid"
+      ],
+      "quote": "Customer must have paid all outstanding invoices to receive Service Credits.",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "days_after_period",
+        "value": 30,
+        "timezone": null
+      },
+      "quote": "Customer may redeem Service Credits only upon written request within thirty (30) days of the end of the Applicable Period.",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "Written request to GitHub Support if purchased directly from GitHub, or through a Microsoft support ticket if purchased through Microsoft",
+        "required_fields": [],
+        "subject_line": null
+      },
+      "quote": "Written requests for Service Credits should be sent either (a) to GitHub Support if Customer purchases directly from GitHub, or (b) through a Microsoft support ticket if Customer purchases SLA-covered Services through Microsoft.",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Service Credits may be in the form of a refund or a credit to Customer\u2019s account.",
+      "section": "3. Service Credits Redemption",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "f755a8b3d9041bbc49c33d94484e1409c936e308dcd09053ef5cd891a0491b21",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 3,
+  "service": "GitHub Enterprise Cloud",
+  "plan": "Enterprise",
+  "extracted_at": "2026-10-31T01:53:43.580085+00:00",
+  "calls": 3,
+  "conversion_notes": [],
+  "usage": {
+    "input_tokens": 15325,
+    "output_tokens": 2967
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": false,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": true,
+    "min_credit": false,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "missing",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "unverified",
+    "downtime_definition": "verified",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "absent",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0603,
+  "split": "tuning"
+}

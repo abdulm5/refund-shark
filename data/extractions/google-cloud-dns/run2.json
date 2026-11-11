@@ -1,0 +1,445 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "Google",
+      "quote": "the agreement under which Google has agreed to provide Google Cloud Platform to Customer",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "Cloud DNS"
+      ],
+      "quote": "the Covered Service will provide a Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not name any plan or tier; the selected plan 'Standard' is not mentioned."
+    },
+    "uptime_commitment_pct": {
+      "value": "100",
+      "quote": "Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers to Customer of 100%",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "calendar_month",
+      "quote": "Monthly Uptime Percentage",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not specify a time zone for measuring the month."
+    },
+    "downtime_definition": {
+      "value": null,
+      "quote": "Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers to Customer of 100%",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "99.5",
+          "upper": "100",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "10"
+        },
+        {
+          "lower": "95",
+          "upper": "99.5",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "25"
+        },
+        {
+          "lower": "0",
+          "upper": "95",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "50"
+        }
+      ],
+      "quote": "| 99.5% - <100% | 10% | \n| 95% - <99.5% | 25% | \n| <95% | 50% |",
+      "section": "Financial Credits table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "Percentage of monthly bill for the respective Covered Service which does not meet SLO that will be credited to future monthly bills of Customer",
+      "section": "Definitions table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": {
+        "pct": "50",
+        "basis": "affected_period_fees"
+      },
+      "quote": "will not exceed 50% of the amount due from Customer for the Covered Service for the applicable month",
+      "section": "Financial Credits cap paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "min_credit": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not state any minimum credit amount."
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "excluded_features",
+          "description": "Features designated Alpha or Beta (unless otherwise set forth in the associated Documentation)",
+          "machine_checkable": true
+        },
+        {
+          "kind": "excluded_features",
+          "description": "Features excluded from the SLA in the associated Documentation",
+          "machine_checkable": false
+        },
+        {
+          "kind": "force_majeure",
+          "description": "Errors caused by factors outside of Google's reasonable control",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_infrastructure",
+          "description": "Errors resulting from Customer's software or hardware or third party software or hardware, or both",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Errors resulting from abuses or other behaviors that violate the Agreement",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Errors resulting from quotas applied by the system and/or listed in the Admin Console",
+          "machine_checkable": false
+        }
+      ],
+      "quote": "The SLA does not apply to any: (a) features designated Alpha or Beta (unless otherwise set forth in the associated Documentation), (b) features excluded from the SLA (in the associated Documentation), or (c) errors: (i) caused by factors outside of Google\u2019s reasonable control; (ii) that resulted from Customer\u2019s software or hardware or third party software or hardware, or both; (iii) that resulted from abuses or other behaviors that violate the Agreement; or (iv) that resulted from quotas applied by the system and/or listed in the Admin Console.",
+      "section": "Exclusions paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "other"
+      ],
+      "quote": "In order to receive any of the Financial Credits described above, Customer must [notify Google technical support](https://support.google.com/cloud/contact/cloud_platform_sla) within thirty days from the time Customer becomes eligible to receive a Financial Credit.",
+      "section": "Claim requirements paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "other",
+        "value": 30,
+        "timezone": null
+      },
+      "quote": "within thirty days from the time Customer becomes eligible to receive a Financial Credit",
+      "section": "Claim requirements paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "Google technical support (https://support.google.com/cloud/contact/cloud_platform_sla)",
+        "required_fields": [
+          "request_logs",
+          "incident_times",
+          "affected_resources"
+        ],
+        "subject_line": null
+      },
+      "quote": "Customer must [notify Google technical support](https://support.google.com/cloud/contact/cloud_platform_sla) within thirty days from the time Customer becomes eligible to receive a Financial Credit. Customer must also provide Google with log files showing loss of response to name server queries from Google name servers on specific domain managed by Cloud DNS and the date and time they occurred.",
+      "section": "Claim requirements paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Financial Credits will be made in the form of a monetary credit applied to future use of the Covered Service",
+      "section": "Credit cap and application paragraph",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "3a78eb1d1acbe15079ade7dc3493e2f1924992dd5c7b6df6a3ce1294312d1a51",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 2,
+  "service": "Cloud DNS",
+  "plan": "Standard",
+  "extracted_at": "2026-10-31T01:58:19.382254+00:00",
+  "calls": 3,
+  "conversion_notes": [
+    "downtime_definition: value.interval_seconds: Input should be greater than 0"
+  ],
+  "raw_output": {
+    "commitment": {
+      "vendor": {
+        "quote": "the agreement under which Google has agreed to provide Google Cloud Platform to Customer",
+        "section": "Preamble",
+        "absent": false,
+        "missing_reason": "",
+        "value": "Google"
+      },
+      "covered_services": {
+        "quote": "the Covered Service will provide a Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers",
+        "section": "Preamble",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          "Cloud DNS"
+        ]
+      },
+      "plan": {
+        "quote": "",
+        "section": "",
+        "absent": true,
+        "missing_reason": "The source does not name any plan or tier; the selected plan 'Standard' is not mentioned.",
+        "value": null
+      },
+      "uptime_commitment_pct": {
+        "quote": "Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers to Customer of 100%",
+        "section": "Preamble",
+        "absent": false,
+        "missing_reason": "",
+        "value": "100"
+      },
+      "measurement_period": {
+        "quote": "Monthly Uptime Percentage",
+        "section": "Preamble",
+        "absent": false,
+        "missing_reason": "",
+        "value": "calendar_month"
+      },
+      "timezone": {
+        "quote": "",
+        "section": "",
+        "absent": true,
+        "missing_reason": "The source does not specify a time zone for measuring the month.",
+        "value": null
+      },
+      "downtime_definition": {
+        "quote": "Monthly Uptime Percentage of Serving DNS queries from at least one of the Google managed Authoritative Name Servers to Customer of 100%",
+        "section": "Preamble",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "kind": "other",
+          "interval_seconds": 0,
+          "error_threshold_pct": "",
+          "description": "Uptime is measured as serving DNS queries from at least one of the Google managed Authoritative Name Servers; the source does not define Downtime Period, interval, or error threshold.",
+          "covered_experiences": [
+            "Serving DNS queries from at least one Google managed Authoritative Name Server"
+          ]
+        }
+      },
+      "credit_tiers": {
+        "quote": "| 99.5% - <100% | 10% | \n| 95% - <99.5% | 25% | \n| <95% | 50% |",
+        "section": "Financial Credits table",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          {
+            "lower": "99.5",
+            "upper": "100",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "95",
+            "upper": "99.5",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          },
+          {
+            "lower": "0",
+            "upper": "95",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "50"
+          }
+        ]
+      }
+    },
+    "pricing": {
+      "credit_basis": {
+        "quote": "Percentage of monthly bill for the respective Covered Service which does not meet SLO that will be credited to future monthly bills of Customer",
+        "section": "Definitions table",
+        "absent": false,
+        "missing_reason": "",
+        "value": "affected_service"
+      },
+      "credit_cap": {
+        "quote": "will not exceed 50% of the amount due from Customer for the Covered Service for the applicable month",
+        "section": "Financial Credits cap paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "pct": "50",
+          "basis": "affected_period_fees"
+        }
+      },
+      "min_credit": {
+        "quote": "",
+        "section": "",
+        "absent": true,
+        "missing_reason": "The source does not state any minimum credit amount.",
+        "value": null
+      },
+      "exclusions": {
+        "quote": "The SLA does not apply to any: (a) features designated Alpha or Beta (unless otherwise set forth in the associated Documentation), (b) features excluded from the SLA (in the associated Documentation), or (c) errors: (i) caused by factors outside of Google\u2019s reasonable control; (ii) that resulted from Customer\u2019s software or hardware or third party software or hardware, or both; (iii) that resulted from abuses or other behaviors that violate the Agreement; or (iv) that resulted from quotas applied by the system and/or listed in the Admin Console.",
+        "section": "Exclusions paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          {
+            "kind": "excluded_features",
+            "description": "Features designated Alpha or Beta (unless otherwise set forth in the associated Documentation)",
+            "machine_checkable": true
+          },
+          {
+            "kind": "excluded_features",
+            "description": "Features excluded from the SLA in the associated Documentation",
+            "machine_checkable": false
+          },
+          {
+            "kind": "force_majeure",
+            "description": "Errors caused by factors outside of Google's reasonable control",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_infrastructure",
+            "description": "Errors resulting from Customer's software or hardware or third party software or hardware, or both",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_breach",
+            "description": "Errors resulting from abuses or other behaviors that violate the Agreement",
+            "machine_checkable": false
+          },
+          {
+            "kind": "other",
+            "description": "Errors resulting from quotas applied by the system and/or listed in the Admin Console",
+            "machine_checkable": false
+          }
+        ]
+      }
+    },
+    "process": {
+      "prerequisites": {
+        "quote": "In order to receive any of the Financial Credits described above, Customer must [notify Google technical support](https://support.google.com/cloud/contact/cloud_platform_sla) within thirty days from the time Customer becomes eligible to receive a Financial Credit.",
+        "section": "Claim requirements paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          "other"
+        ]
+      },
+      "claim_window": {
+        "quote": "within thirty days from the time Customer becomes eligible to receive a Financial Credit",
+        "section": "Claim requirements paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "kind": "other",
+          "value": 30,
+          "timezone": ""
+        }
+      },
+      "claim_procedure": {
+        "quote": "Customer must [notify Google technical support](https://support.google.com/cloud/contact/cloud_platform_sla) within thirty days from the time Customer becomes eligible to receive a Financial Credit. Customer must also provide Google with log files showing loss of response to name server queries from Google name servers on specific domain managed by Cloud DNS and the date and time they occurred.",
+        "section": "Claim requirements paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "channel": "Google technical support (https://support.google.com/cloud/contact/cloud_platform_sla)",
+          "required_fields": [
+            "request_logs",
+            "incident_times",
+            "affected_resources"
+          ],
+          "subject_line": ""
+        }
+      },
+      "remedy_form": {
+        "quote": "Financial Credits will be made in the form of a monetary credit applied to future use of the Covered Service",
+        "section": "Credit cap and application paragraph",
+        "absent": false,
+        "missing_reason": "",
+        "value": "service_credit"
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 11530,
+    "output_tokens": 2192
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": false,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": true,
+    "min_credit": false,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "absent",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "missing",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "verified",
+    "min_credit": "absent",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.045,
+  "split": "held_out"
+}

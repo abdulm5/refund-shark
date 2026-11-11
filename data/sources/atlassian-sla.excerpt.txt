@@ -1,0 +1,46 @@
+For Eligible Cloud Products (as listed in the table in Appendix A) Atlassian must provide the following monthly uptime percentage to Customer (the “Service Level Commitment”):
+Cloud Plan
+Service Level Commitment
+Premium
+99.9%
+Enterprise
+99.95%
+[…]
+2. Service Credits
+2.1. Eligibility. To be eligible to receive a service credit for Atlassian’s failure to meet the Service Level Commitment (“Service Credit”), Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed within fifteen (15) days after the end of the calendar month in which the alleged failure occurred and provide any other reasonably requested information or documentation (for instance, as described here). Atlassian’s monitoring and logging infrastructure is the sole source of truth for determining whether Atlassian has met the Service Level Commitment.
+2.2. Issuance. If Atlassian confirms a failure to meet the Service Level Commitment, Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product, provided that Customer’s account is fully paid up, without any overdue payments or disputes. No refunds or cash value will be given for unused Service Credits. Service Credits may not be transferred or applied to any other Atlassian account or Product. The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).
+[…]
+3. Exclusions
+Customer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.
+[…]
+Appendix A – Eligible Cloud Products and Covered Experiences
+Eligible Cloud Product
+Covered Experience*
+Jira (Premium and Enterprise)
+View Issue
+Create Issue
+Edit Issue
+View Board
+[…]
+Notes: * Except for Bitbucket GIT transactions and Jira Service Management 'Receive Alert', Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions). ** Bitbucket Cloud-hosted builds only (excludes self-hosted runners) *** For purposes of this Service Level Agreement, Loom Business + AI will be considered a Premium Plan Cloud Product.
+[…]
+Appendix B – Service Credits
+- Premium Plan Cloud Products -
+Monthly Uptime Percentage
+Service Credit*
+Less than 99.9% but greater than or equal to 99.0%
+10%
+Less than 99.0% but greater than or equal to 95.0%
+25%
+Less than 95.0%
+50%
+Notes: * Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.
+[…]
+Calculation
+The monthly uptime percentage indicated in the above tables is determined by subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month. This calculation is done independently for each Eligible Cloud Product. All calendar months are measured in the UTC time zone.
+[…]
+Definitions
+“Covered Experiences” are specified for each Eligible Cloud Product in Appendix A.
+“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.
+“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. For example, subject to the terms of this Service Level Agreement, where Atlassian confirms for a given minute that
+[…]

@@ -1,0 +1,87 @@
+{
+  "note": "Simulated customer directory: the vendor, product, plan, and site region that bills and card spend would show. Not real customers.",
+  "customers": [
+    {
+      "customer_id": "northstar-demo",
+      "display_name": "Northstar Analytics (demo)",
+      "contact": "Finance operations (demo)",
+      "subscriptions": [
+        {
+          "vendor": "Atlassian",
+          "product": "Jira",
+          "plan": "Premium",
+          "site_region": "US East",
+          "account_reference": "DEMO-NORTHSTAR-JIRA"
+        },
+        {
+          "vendor": "GitHub",
+          "product": "Enterprise Cloud",
+          "plan": "Enterprise",
+          "account_reference": "DEMO-NORTHSTAR-001"
+        },
+        {
+          "vendor": "Cloudflare",
+          "product": "Business",
+          "plan": "Business",
+          "account_reference": "DEMO-NORTHSTAR-001"
+        }
+      ]
+    },
+    {
+      "customer_id": "harbor-demo",
+      "display_name": "Harbor Logistics (demo)",
+      "contact": "Billing admin (demo)",
+      "subscriptions": [
+        {
+          "vendor": "Atlassian",
+          "product": "Jira",
+          "plan": "Premium",
+          "site_region": "US East",
+          "account_reference": "DEMO-HARBOR-JIRA"
+        }
+      ]
+    },
+    {
+      "customer_id": "cobalt-demo",
+      "display_name": "Cobalt Studio (demo)",
+      "contact": "Billing admin (demo)",
+      "subscriptions": [
+        {
+          "vendor": "Atlassian",
+          "product": "Jira",
+          "plan": "Premium",
+          "site_region": "EU",
+          "account_reference": "DEMO-COBALT-JIRA"
+        }
+      ]
+    },
+    {
+      "customer_id": "juniper-demo",
+      "display_name": "Juniper Health (demo)",
+      "contact": "IT procurement (demo)",
+      "subscriptions": [
+        {
+          "vendor": "Atlassian",
+          "product": "Jira",
+          "plan": "Enterprise",
+          "site_region": "APAC",
+          "account_reference": "DEMO-JUNIPER-JIRA"
+        }
+      ]
+    },
+    {
+      "customer_id": "pinecrest-demo",
+      "display_name": "Pinecrest Labs (demo)",
+      "contact": "Office manager (demo)",
+      "subscriptions": [
+        {
+          "vendor": "Atlassian",
+          "product": "Jira",
+          "plan": "Standard",
+          "site_region": "US East",
+          "account_reference": "DEMO-PINECREST-JIRA"
+        }
+      ]
+    }
+  ]
+}

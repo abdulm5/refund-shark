@@ -1,0 +1,14 @@
+{
+  "file": "refund-shark-demo-1080p.mp4",
+  "duration_seconds": 150,
+  "width": 1920,
+  "height": 1080,
+  "frames_per_second": 30,
+  "frames_encoded": 4500,
+  "codec": "H.264",
+  "audio_tracks": 0,
+  "size_bytes": 83754279,
+  "sha256": "0dfc150b30435c51a0ae6c26a8689a18d0064b40dac6ff0fe839013a31d53c19",
+  "verification": "Decoded 16 full-resolution frames across the finished MP4; duration, resolution, frame rate, and silent audio configuration confirmed.",
+  "source": "18 real app captures in an isolated simulation; annotations and camera motion composed locally."
+}

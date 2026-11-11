@@ -1,0 +1,20 @@
+.venv/
+.cache/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+web/node_modules/
+web/.next/
+web/out/
+web/tsconfig.tsbuildinfo
+.DS_Store
+*.sqlite3*
+.hypothesis/
+.superpowers/
+tmp/
+# Superseded video prototype; the standard walkthrough is included in the repo.
+docs/demo/refund-shark-demo-1080p.mp4

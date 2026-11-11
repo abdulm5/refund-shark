@@ -1,0 +1,151 @@
+{
+  "file": "refund-shark-standard-demo.mp4",
+  "duration_seconds": 178.03333333333333,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "capture_resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "audio": "Silent for voice-over",
+  "source": "Continuous browser screencast. Original timing, normal pointer and scrolling; no title cards, camera crops, or artificial zooms.",
+  "browser_frames": 1337,
+  "chapters": [
+    {
+      "planned": 0,
+      "start": 0.006320666999999958,
+      "name": "overview"
+    },
+    {
+      "planned": 5,
+      "start": 5.001633249999999,
+      "name": "start-recovery"
+    },
+    {
+      "planned": 10,
+      "start": 10.000298791999999,
+      "name": "three-outcomes"
+    },
+    {
+      "planned": 16,
+      "start": 16.00202225,
+      "name": "missing-ticket"
+    },
+    {
+      "planned": 22,
+      "start": 22.002362959,
+      "name": "maintenance-excluded"
+    },
+    {
+      "planned": 28,
+      "start": 28.001608124999997,
+      "name": "add-support-ticket"
+    },
+    {
+      "planned": 34,
+      "start": 34.00120662500001,
+      "name": "updated-total"
+    },
+    {
+      "planned": 41,
+      "start": 41.002117,
+      "name": "explain-calculation"
+    },
+    {
+      "planned": 52,
+      "start": 52.002300042,
+      "name": "prepared-email"
+    },
+    {
+      "planned": 60,
+      "start": 60.00174487500001,
+      "name": "accept-draft"
+    },
+    {
+      "planned": 67,
+      "start": 67.00266741699998,
+      "name": "saved-case"
+    },
+    {
+      "planned": 73,
+      "start": 73.001208959,
+      "name": "remove-ticket-challenge"
+    },
+    {
+      "planned": 82,
+      "start": 82.00289945899999,
+      "name": "duplicate-evidence-challenge"
+    },
+    {
+      "planned": 90,
+      "start": 90.00170266699999,
+      "name": "download-evidence"
+    },
+    {
+      "planned": 98,
+      "start": 98.002136334,
+      "name": "pdf-documents"
+    },
+    {
+      "planned": 108,
+      "start": 108.00160445899999,
+      "name": "pdf-source-text"
+    },
+    {
+      "planned": 115,
+      "start": 115.00212149999999,
+      "name": "agreement-citations"
+    },
+    {
+      "planned": 123,
+      "start": 123.00232645899999,
+      "name": "credit-table-source"
+    },
+    {
+      "planned": 130,
+      "start": 130.00298858399998,
+      "name": "datadog-setup"
+    },
+    {
+      "planned": 141,
+      "start": 141.000601125,
+      "name": "outage-to-invoice"
+    },
+    {
+      "planned": 145,
+      "start": 145.000848917,
+      "name": "detect-outage"
+    },
+    {
+      "planned": 150,
+      "start": 150.000836209,
+      "name": "record-ticket"
+    },
+    {
+      "planned": 155,
+      "start": 155.000955,
+      "name": "measure-evidence"
+    },
+    {
+      "planned": 162,
+      "start": 162.00055945900002,
+      "name": "simulate-approval"
+    },
+    {
+      "planned": 168,
+      "start": 168.00036233400002,
+      "name": "match-invoice-credit"
+    },
+    {
+      "planned": 174,
+      "start": 174.00063958400003,
+      "name": "credit-matched"
+    }
+  ],
+  "size_bytes": 34287898,
+  "sha256": "9686e6a65b182f3290a2193281855f97ddd20ff9443ef147364ae9ad24327b00",
+  "verification": "Decoded 20 representative frames, including the final invoice-match screen; confirmed 178.033 seconds, 1920x1080, 30 fps, and no audio track."
+}

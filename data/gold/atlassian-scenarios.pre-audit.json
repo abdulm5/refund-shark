@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "jira-sept-claim",
+    "vendor": "Atlassian",
+    "product": "Jira",
+    "plan": "Premium",
+    "color": "#2360d6",
+    "initials": "J",
+    "summary": "Request logs confirm downtime during the Sept 3 US East incident",
+    "period": "2026-09",
+    "as_of": "2026-10-08T12:00:00Z",
+    "source_text": "=== Atlassian Service Level Agreement — verbatim excerpt (https://www.atlassian.com/legal/sla) ===\n\nFor Eligible Cloud Products (as listed in the table in Appendix A) Atlassian must provide the following monthly uptime percentage to Customer (the “Service Level Commitment”):\nCloud Plan\nService Level Commitment\nPremium\n99.9%\nEnterprise\n99.95%\n[…]\n2. Service Credits\n2.1. Eligibility. To be eligible to receive a service credit for Atlassian’s failure to meet the Service Level Commitment (“Service Credit”), Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed within fifteen (15) days after the end of the calendar month in which the alleged failure occurred and provide any other reasonably requested information or documentation (for instance, as described here). Atlassian’s monitoring and logging infrastructure is the sole source of truth for determining whether Atlassian has met the Service Level Commitment.\n2.2. Issuance. If Atlassian confirms a failure to meet the Service Level Commitment, Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product, provided that Customer’s account is fully paid up, without any overdue payments or disputes. No refunds or cash value will be given for unused Service Credits. Service Credits may not be transferred or applied to any other Atlassian account or Product. The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).\n[…]\n3. Exclusions\nCustomer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.\n[…]\nAppendix A – Eligible Cloud Products and Covered Experiences\nEligible Cloud Product\nCovered Experience*\nJira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board\n[…]\nNotes: * Except for Bitbucket GIT transactions and Jira Service Management 'Receive Alert', Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions). ** Bitbucket Cloud-hosted builds only (excludes self-hosted runners) *** For purposes of this Service Level Agreement, Loom Business + AI will be considered a Premium Plan Cloud Product.\n[…]\nAppendix B – Service Credits\n- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%\nNotes: * Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.\n[…]\nCalculation\nThe monthly uptime percentage indicated in the above tables is determined by subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month. This calculation is done independently for each Eligible Cloud Product. All calendar months are measured in the UTC time zone.\n[…]\nDefinitions\n“Covered Experiences” are specified for each Eligible Cloud Product in Appendix A.\n“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. For example, subject to the terms of this Service Level Agreement, where Atlassian confirms for a given minute that\n[…]\n\n=== Atlassian Support: Service Level Agreement for Atlassian cloud apps — verbatim excerpt (https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/) ===\n\n[…]\nProcess to get compensation\nIf you think you qualify for compensation, you need to submit two separate requests to get help and compensation.\n- Report your problem and get help. To do that, submit a technical support request during the incident at [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- Request a compensation credit. After you submit a technical support ticket, you have until the 15th the month after the problem occurred to submit a compensation request. To do that, submit a separate SLA compensation request, as explained in the next section.\nYou can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.\n[…]\nTo submit a request:\n- Go to [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- From the dropdown What can we help you with?, select Compensation Requests.\n- From Select a topic, select Cloud Premium SLA compensation request or Cloud Enterprise compensation request, depending on the plan of the app.\n- Enter the rest of the details for your request and click Submit.\nIf multiple incidents occur for one app during a given month, include all of them in one compensation ticket. If incidents occur across apps, you need to create separate tickets for each app.\n[…]\nReceive compensation\nAfter submitting your request, our team will validate the claim and award a service credit when applicable. Once we determine the credit amount, we add it to the ticket. If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.\n[…]\nIf your bill is on monthly payments, your service credit will be based on the monthly fee for the impacted apps. You receive that credit on your next month’s invoice.\nIf you pay your bill annually, your service credit will be based on your annual fee (adjusted for amount per month) for the impacted app. You receive that credit on your next annual invoice.\n[…]\n",
+    "source_hash": "1543f7c4f16b04e9f30928b7067546b10b22f9c3ec4100e15378986034c69373",
+    "source_label": "Atlassian SLA (effective Apr 30, 2026) and compensation procedure — verbatim excerpts",
+    "official_sla_url": "https://www.atlassian.com/legal/sla",
+    "terms": {
+      "vendor": {
+        "value": "Atlassian",
+        "quote": "Atlassian must provide the following monthly uptime percentage to Customer",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "covered_services": {
+        "value": [
+          "Jira"
+        ],
+        "quote": "Jira (Premium and Enterprise)",
+        "section": "Appendix A",
+        "absent": false,
+        "missing_reason": null
+      },
+      "plan": {
+        "value": "Premium",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "uptime_commitment_pct": {
+        "value": "99.9",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "measurement_period": {
+        "value": "calendar_month",
+        "quote": "subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "timezone": {
+        "value": "UTC",
+        "quote": "All calendar months are measured in the UTC time zone.",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "downtime_definition": {
+        "value": {
+          "kind": "request_error_rate",
+          "interval_seconds": 60,
+          "error_threshold_pct": "5",
+          "description": "A Downtime Minute is a minute in which more than 5% of the customer's requests to covered experiences fail.",
+          "covered_experiences": [
+            "View Issue",
+            "Create Issue",
+            "Edit Issue",
+            "View Board"
+          ]
+        },
+        "quote": "“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. […] Jira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board […] Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions).",
+        "section": "Appendix A; Appendix B · Definitions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_tiers": {
+        "value": [
+          {
+            "lower": "99.0",
+            "upper": "99.9",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "95.0",
+            "upper": "99.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          },
+          {
+            "lower": "0",
+            "upper": "95.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "50"
+          }
+        ],
+        "quote": "- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%",
+        "section": "Appendix B · Premium Plan Cloud Products",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_basis": {
+        "value": "affected_service",
+        "quote": "Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.",
+        "section": "Appendix B · Notes",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_cap": {
+        "value": {
+          "pct": "100",
+          "basis": "receiving_invoice"
+        },
+        "quote": "The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      },
+      "min_credit": {
+        "value": null,
+        "quote": null,
+        "section": null,
+        "absent": true,
+        "missing_reason": "Neither the SLA nor the compensation procedure states a minimum credit amount."
+      },
+      "exclusions": {
+        "value": [
+          {
+            "kind": "customer_breach",
+            "description": "Customer is in breach of the Agreement or has not provisioned the product",
+            "machine_checkable": false
+          },
+          {
+            "kind": "unauthorized_use",
+            "description": "Use of the Cloud Products not authorized under the Agreement",
+            "machine_checkable": false
+          },
+          {
+            "kind": "force_majeure",
+            "description": "Force majeure or factors outside Atlassian's reasonable control, including internet access",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_infrastructure",
+            "description": "Customer equipment, software, network connections or other infrastructure",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_data",
+            "description": "Customer Data or Customer Materials",
+            "machine_checkable": false
+          },
+          {
+            "kind": "third_party_products",
+            "description": "Third-Party Products",
+            "machine_checkable": false
+          },
+          {
+            "kind": "excluded_features",
+            "description": "Features excluded from the commitment in the applicable Documentation",
+            "machine_checkable": false
+          },
+          {
+            "kind": "scheduled_maintenance",
+            "description": "Routine scheduled or reasonable emergency maintenance under the Atlassian Maintenance Policy",
+            "machine_checkable": true
+          }
+        ],
+        "quote": "Customer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.",
+        "section": "§3 Exclusions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "prerequisites": {
+        "value": [
+          "production_instance",
+          "account_fully_paid",
+          "support_ticket_during_incident"
+        ],
+        "quote": "provided that Customer’s account is fully paid up, without any overdue payments or disputes […] submit a technical support request during the incident […] You can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.",
+        "section": "§2.2 Issuance; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_window": {
+        "value": {
+          "kind": "days_after_period",
+          "value": 15,
+          "timezone": null
+        },
+        "quote": "within fifteen (15) days after the end of the calendar month in which the alleged failure occurred",
+        "section": "§2.1 Eligibility",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_procedure": {
+        "value": {
+          "channel": "Atlassian support ticket → Compensation Requests → Cloud Premium SLA compensation request",
+          "required_fields": [
+            "account_reference",
+            "service",
+            "period",
+            "incident_times",
+            "calculation"
+          ],
+          "subject_line": null
+        },
+        "quote": "Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed […] From the dropdown What can we help you with?, select Compensation Requests. […] If multiple incidents occur for one app during a given month, include all of them in one compensation ticket.",
+        "section": "§2.1 Eligibility; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "remedy_form": {
+        "value": "service_credit",
+        "quote": "Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product […] No refunds or cash value will be given for unused Service Credits.",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      }
+    },
+    "account": {
+      "customer_id": "northstar-demo",
+      "plan": "Premium",
+      "service": "Jira",
+      "prerequisites": {
+        "production_instance": true,
+        "account_fully_paid": true,
+        "support_ticket_during_incident": true
+      },
+      "history_complete": true,
+      "non_machine_exclusions_reviewed": true,
+      "receiving_invoice_fees": "9000",
+      "account_reference": "DEMO-NORTHSTAR-JIRA",
+      "billing_cycle": "monthly",
+      "display_name": "Northstar Analytics (demo)"
+    },
+    "invoice": {
+      "id": "DEMO-INV-2026-09-NORTHSTAR",
+      "customer_id": "northstar-demo",
+      "vendor": "Atlassian",
+      "service": "Jira",
+      "period": "2026-09",
+      "currency": "USD",
+      "affected_fees": "9000",
+      "fee_allocation": "standalone",
+      "annual_fees": null,
+      "simulated": true
+    },
+    "incidents": [
+      {
+        "id": "ws0393rxcgyl",
+        "title": "Disrupted JIRA availability in US East",
+        "service": "Jira",
+        "intervals": [
+          {
+            "start": "2026-09-03T15:57:31.948000Z",
+            "end": "2026-09-03T16:35:58Z"
+          }
+        ],
+        "interval_basis": "Public status updates: covered components in major outage until monitoring began",
+        "context_windows": [
+          {
+            "label": "Vendor postmortem impact window",
+            "intervals": [
+              {
+                "start": "2026-09-03T14:52:00Z",
+                "end": "2026-09-03T17:02:00Z"
+              }
+            ],
+            "source_url": "https://jira-software.status.atlassian.com/incidents/ws0393rxcgyl",
+            "detail": "Some Jira/JSM customers in US East; intermittent covered-experience failures."
+          }
+        ],
+        "severity": "major_outage",
+        "source_url": "https://jira-software.status.atlassian.com/incidents/ws0393rxcgyl",
+        "evidence_kind": "public_timeline",
+        "metric_verified": false,
+        "related_incident": null,
+        "experiences": [],
+        "components": [
+          "Create and edit",
+          "Viewing content"
+        ],
+        "region": "US East",
+        "started_at": "2026-09-03T15:57:31.693000Z",
+        "log": null,
+        "log_summary": null,
+        "simulated": false,
+        "notes": "Real public incident. Its windows show when the vendor reported impact; they are not this customer's Downtime Minutes. The status-update window ends when monitoring began; the postmortem window is longer and includes intermittent failures."
+      },
+      {
+        "id": "DEMO-LOGS-NORTHSTAR-2026-09",
+        "title": "Customer request logs, September",
+        "service": "Jira",
+        "intervals": [],
+        "interval_basis": "Computed by code from a simulated per-minute request log: minutes where more than 5% of covered-experience requests failed",
+        "context_windows": [],
+        "severity": "major_outage",
+        "source_url": null,
+        "evidence_kind": "customer_metrics",
+        "metric_verified": true,
+        "related_incident": "ws0393rxcgyl",
+        "experiences": [],
+        "components": [],
+        "region": null,
+        "started_at": null,
+        "log": {
+          "path": "data/fixtures/logs/northstar-jira-2026-09.csv.gz",
+          "sha256": "f1af734afc7c46e1d0f2948f8d2ca330983a5a286a3f87b55ff4f3cb828981fc"
+        },
+        "log_summary": null,
+        "simulated": true,
+        "notes": "Simulated for this demo: 129,600 log rows. A real claim would attach the customer's own request logs."
+      }
+    ],
+    "maintenance": [],
+    "simulated": true,
+    "role": "claim_candidate",
+    "dispute_rule": {
+      "value": {
+        "business_days": 3
+      },
+      "quote": "If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.",
+      "section": "Compensation procedure · Receive compensation",
+      "absent": false,
+      "missing_reason": null
+    },
+    "source_refs": [
+      {
+        "id": "atlassian-sla",
+        "title": "Atlassian Service Level Agreement",
+        "url": "https://www.atlassian.com/legal/sla",
+        "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+        "effective_date": "2026-04-30",
+        "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+        "text_sha256": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+        "excerpt_sha256": "b2e8de0bc3005e2e839fe458fec92e63847bfe073f97ab4b17d07e380d81c277",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      },
+      {
+        "id": "atlassian-compensation",
+        "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+        "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+        "retrieved_at": "2026-10-30T05:22:49.304399+00:00",
+        "effective_date": null,
+        "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+        "text_sha256": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050",
+        "excerpt_sha256": "b96dc7ba3d40848326e28474c87794cb574a75aca639abf4a0195e45f611a0dd",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      }
+    ],
+    "provenance": [
+      {
+        "item": "Agreement terms",
+        "kind": "real",
+        "detail": "Quoted from Atlassian's public SLA and compensation procedure; values reviewed against the quotes."
+      },
+      {
+        "item": "Sept 3 incident",
+        "kind": "real",
+        "detail": "Atlassian Statuspage incident ws0393rxcgyl with its historical updates and postmortem window."
+      },
+      {
+        "item": "Customer request logs",
+        "kind": "simulated",
+        "detail": "A simulated per-minute log for September (129,600 rows). Code computes 96 Downtime Minutes under the SLA's definition; 132 error minutes on the REST API are excluded because API calls are not a covered experience."
+      },
+      {
+        "item": "Customer, invoice, receiving invoice, and support ticket",
+        "kind": "simulated",
+        "detail": "Demo records; no real customer or bill."
+      }
+    ]
+  },
+  {
+    "id": "jira-sept-missing-evidence",
+    "vendor": "Atlassian",
+    "product": "Jira",
+    "plan": "Premium",
+    "color": "#2360d6",
+    "initials": "J",
+    "summary": "Real Sept 3 incident; no customer request logs or ticket on file",
+    "period": "2026-09",
+    "as_of": "2026-10-08T12:00:00Z",
+    "source_text": "=== Atlassian Service Level Agreement — verbatim excerpt (https://www.atlassian.com/legal/sla) ===\n\nFor Eligible Cloud Products (as listed in the table in Appendix A) Atlassian must provide the following monthly uptime percentage to Customer (the “Service Level Commitment”):\nCloud Plan\nService Level Commitment\nPremium\n99.9%\nEnterprise\n99.95%\n[…]\n2. Service Credits\n2.1. Eligibility. To be eligible to receive a service credit for Atlassian’s failure to meet the Service Level Commitment (“Service Credit”), Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed within fifteen (15) days after the end of the calendar month in which the alleged failure occurred and provide any other reasonably requested information or documentation (for instance, as described here). Atlassian’s monitoring and logging infrastructure is the sole source of truth for determining whether Atlassian has met the Service Level Commitment.\n2.2. Issuance. If Atlassian confirms a failure to meet the Service Level Commitment, Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product, provided that Customer’s account is fully paid up, without any overdue payments or disputes. No refunds or cash value will be given for unused Service Credits. Service Credits may not be transferred or applied to any other Atlassian account or Product. The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).\n[…]\n3. Exclusions\nCustomer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.\n[…]\nAppendix A – Eligible Cloud Products and Covered Experiences\nEligible Cloud Product\nCovered Experience*\nJira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board\n[…]\nNotes: * Except for Bitbucket GIT transactions and Jira Service Management 'Receive Alert', Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions). ** Bitbucket Cloud-hosted builds only (excludes self-hosted runners) *** For purposes of this Service Level Agreement, Loom Business + AI will be considered a Premium Plan Cloud Product.\n[…]\nAppendix B – Service Credits\n- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%\nNotes: * Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.\n[…]\nCalculation\nThe monthly uptime percentage indicated in the above tables is determined by subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month. This calculation is done independently for each Eligible Cloud Product. All calendar months are measured in the UTC time zone.\n[…]\nDefinitions\n“Covered Experiences” are specified for each Eligible Cloud Product in Appendix A.\n“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. For example, subject to the terms of this Service Level Agreement, where Atlassian confirms for a given minute that\n[…]\n\n=== Atlassian Support: Service Level Agreement for Atlassian cloud apps — verbatim excerpt (https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/) ===\n\n[…]\nProcess to get compensation\nIf you think you qualify for compensation, you need to submit two separate requests to get help and compensation.\n- Report your problem and get help. To do that, submit a technical support request during the incident at [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- Request a compensation credit. After you submit a technical support ticket, you have until the 15th the month after the problem occurred to submit a compensation request. To do that, submit a separate SLA compensation request, as explained in the next section.\nYou can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.\n[…]\nTo submit a request:\n- Go to [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- From the dropdown What can we help you with?, select Compensation Requests.\n- From Select a topic, select Cloud Premium SLA compensation request or Cloud Enterprise compensation request, depending on the plan of the app.\n- Enter the rest of the details for your request and click Submit.\nIf multiple incidents occur for one app during a given month, include all of them in one compensation ticket. If incidents occur across apps, you need to create separate tickets for each app.\n[…]\nReceive compensation\nAfter submitting your request, our team will validate the claim and award a service credit when applicable. Once we determine the credit amount, we add it to the ticket. If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.\n[…]\nIf your bill is on monthly payments, your service credit will be based on the monthly fee for the impacted apps. You receive that credit on your next month’s invoice.\nIf you pay your bill annually, your service credit will be based on your annual fee (adjusted for amount per month) for the impacted app. You receive that credit on your next annual invoice.\n[…]\n",
+    "source_hash": "1543f7c4f16b04e9f30928b7067546b10b22f9c3ec4100e15378986034c69373",
+    "source_label": "Atlassian SLA (effective Apr 30, 2026) and compensation procedure — verbatim excerpts",
+    "official_sla_url": "https://www.atlassian.com/legal/sla",
+    "terms": {
+      "vendor": {
+        "value": "Atlassian",
+        "quote": "Atlassian must provide the following monthly uptime percentage to Customer",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "covered_services": {
+        "value": [
+          "Jira"
+        ],
+        "quote": "Jira (Premium and Enterprise)",
+        "section": "Appendix A",
+        "absent": false,
+        "missing_reason": null
+      },
+      "plan": {
+        "value": "Premium",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "uptime_commitment_pct": {
+        "value": "99.9",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "measurement_period": {
+        "value": "calendar_month",
+        "quote": "subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "timezone": {
+        "value": "UTC",
+        "quote": "All calendar months are measured in the UTC time zone.",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "downtime_definition": {
+        "value": {
+          "kind": "request_error_rate",
+          "interval_seconds": 60,
+          "error_threshold_pct": "5",
+          "description": "A Downtime Minute is a minute in which more than 5% of the customer's requests to covered experiences fail.",
+          "covered_experiences": [
+            "View Issue",
+            "Create Issue",
+            "Edit Issue",
+            "View Board"
+          ]
+        },
+        "quote": "“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. […] Jira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board […] Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions).",
+        "section": "Appendix A; Appendix B · Definitions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_tiers": {
+        "value": [
+          {
+            "lower": "99.0",
+            "upper": "99.9",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "95.0",
+            "upper": "99.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          },
+          {
+            "lower": "0",
+            "upper": "95.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "50"
+          }
+        ],
+        "quote": "- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%",
+        "section": "Appendix B · Premium Plan Cloud Products",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_basis": {
+        "value": "affected_service",
+        "quote": "Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.",
+        "section": "Appendix B · Notes",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_cap": {
+        "value": {
+          "pct": "100",
+          "basis": "receiving_invoice"
+        },
+        "quote": "The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      },
+      "min_credit": {
+        "value": null,
+        "quote": null,
+        "section": null,
+        "absent": true,
+        "missing_reason": "Neither the SLA nor the compensation procedure states a minimum credit amount."
+      },
+      "exclusions": {
+        "value": [
+          {
+            "kind": "customer_breach",
+            "description": "Customer is in breach of the Agreement or has not provisioned the product",
+            "machine_checkable": false
+          },
+          {
+            "kind": "unauthorized_use",
+            "description": "Use of the Cloud Products not authorized under the Agreement",
+            "machine_checkable": false
+          },
+          {
+            "kind": "force_majeure",
+            "description": "Force majeure or factors outside Atlassian's reasonable control, including internet access",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_infrastructure",
+            "description": "Customer equipment, software, network connections or other infrastructure",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_data",
+            "description": "Customer Data or Customer Materials",
+            "machine_checkable": false
+          },
+          {
+            "kind": "third_party_products",
+            "description": "Third-Party Products",
+            "machine_checkable": false
+          },
+          {
+            "kind": "excluded_features",
+            "description": "Features excluded from the commitment in the applicable Documentation",
+            "machine_checkable": false
+          },
+          {
+            "kind": "scheduled_maintenance",
+            "description": "Routine scheduled or reasonable emergency maintenance under the Atlassian Maintenance Policy",
+            "machine_checkable": true
+          }
+        ],
+        "quote": "Customer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.",
+        "section": "§3 Exclusions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "prerequisites": {
+        "value": [
+          "production_instance",
+          "account_fully_paid",
+          "support_ticket_during_incident"
+        ],
+        "quote": "provided that Customer’s account is fully paid up, without any overdue payments or disputes […] submit a technical support request during the incident […] You can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.",
+        "section": "§2.2 Issuance; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_window": {
+        "value": {
+          "kind": "days_after_period",
+          "value": 15,
+          "timezone": null
+        },
+        "quote": "within fifteen (15) days after the end of the calendar month in which the alleged failure occurred",
+        "section": "§2.1 Eligibility",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_procedure": {
+        "value": {
+          "channel": "Atlassian support ticket → Compensation Requests → Cloud Premium SLA compensation request",
+          "required_fields": [
+            "account_reference",
+            "service",
+            "period",
+            "incident_times",
+            "calculation"
+          ],
+          "subject_line": null
+        },
+        "quote": "Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed […] From the dropdown What can we help you with?, select Compensation Requests. […] If multiple incidents occur for one app during a given month, include all of them in one compensation ticket.",
+        "section": "§2.1 Eligibility; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "remedy_form": {
+        "value": "service_credit",
+        "quote": "Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product […] No refunds or cash value will be given for unused Service Credits.",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      }
+    },
+    "account": {
+      "customer_id": "harbor-demo",
+      "plan": "Premium",
+      "service": "Jira",
+      "prerequisites": {
+        "production_instance": true,
+        "account_fully_paid": true,
+        "support_ticket_during_incident": null
+      },
+      "history_complete": false,
+      "non_machine_exclusions_reviewed": false,
+      "receiving_invoice_fees": null,
+      "account_reference": "DEMO-HARBOR-JIRA",
+      "billing_cycle": "monthly",
+      "display_name": "Harbor Logistics (demo)"
+    },
+    "invoice": {
+      "id": "DEMO-INV-2026-09-HARBOR",
+      "customer_id": "harbor-demo",
+      "vendor": "Atlassian",
+      "service": "Jira",
+      "period": "2026-09",
+      "currency": "USD",
+      "affected_fees": "4800",
+      "fee_allocation": "standalone",
+      "annual_fees": null,
+      "simulated": true
+    },
+    "incidents": [
+      {
+        "id": "ws0393rxcgyl",
+        "title": "Disrupted JIRA availability in US East",
+        "service": "Jira",
+        "intervals": [
+          {
+            "start": "2026-09-03T15:57:31.948000Z",
+            "end": "2026-09-03T16:35:58Z"
+          }
+        ],
+        "interval_basis": "Public status updates: covered components in major outage until monitoring began",
+        "context_windows": [
+          {
+            "label": "Vendor postmortem impact window",
+            "intervals": [
+              {
+                "start": "2026-09-03T14:52:00Z",
+                "end": "2026-09-03T17:02:00Z"
+              }
+            ],
+            "source_url": "https://jira-software.status.atlassian.com/incidents/ws0393rxcgyl",
+            "detail": "Some Jira/JSM customers in US East; intermittent covered-experience failures."
+          }
+        ],
+        "severity": "major_outage",
+        "source_url": "https://jira-software.status.atlassian.com/incidents/ws0393rxcgyl",
+        "evidence_kind": "public_timeline",
+        "metric_verified": false,
+        "related_incident": null,
+        "experiences": [],
+        "components": [
+          "Create and edit",
+          "Viewing content"
+        ],
+        "region": "US East",
+        "started_at": "2026-09-03T15:57:31.693000Z",
+        "log": null,
+        "log_summary": null,
+        "simulated": false,
+        "notes": "Real public incident. Its windows show when the vendor reported impact; they are not this customer's Downtime Minutes. The status-update window ends when monitoring began; the postmortem window is longer and includes intermittent failures."
+      }
+    ],
+    "maintenance": [],
+    "simulated": true,
+    "role": "missing_evidence",
+    "dispute_rule": {
+      "value": {
+        "business_days": 3
+      },
+      "quote": "If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.",
+      "section": "Compensation procedure · Receive compensation",
+      "absent": false,
+      "missing_reason": null
+    },
+    "source_refs": [
+      {
+        "id": "atlassian-sla",
+        "title": "Atlassian Service Level Agreement",
+        "url": "https://www.atlassian.com/legal/sla",
+        "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+        "effective_date": "2026-04-30",
+        "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+        "text_sha256": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+        "excerpt_sha256": "b2e8de0bc3005e2e839fe458fec92e63847bfe073f97ab4b17d07e380d81c277",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      },
+      {
+        "id": "atlassian-compensation",
+        "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+        "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+        "retrieved_at": "2026-10-30T05:22:49.304399+00:00",
+        "effective_date": null,
+        "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+        "text_sha256": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050",
+        "excerpt_sha256": "b96dc7ba3d40848326e28474c87794cb574a75aca639abf4a0195e45f611a0dd",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      }
+    ],
+    "provenance": [
+      {
+        "item": "Agreement terms",
+        "kind": "real",
+        "detail": "Quoted from Atlassian's public SLA and compensation procedure; values reviewed against the quotes."
+      },
+      {
+        "item": "Sept 3 incident",
+        "kind": "real",
+        "detail": "Atlassian Statuspage incident ws0393rxcgyl with its historical updates and postmortem window."
+      },
+      {
+        "item": "Customer evidence",
+        "kind": "simulated",
+        "detail": "Deliberately missing: no request logs, support ticket, or receiving invoice are supplied."
+      },
+      {
+        "item": "Customer and invoice",
+        "kind": "simulated",
+        "detail": "Demo records; no real customer or bill."
+      }
+    ]
+  },
+  {
+    "id": "jira-sept-maintenance",
+    "vendor": "Atlassian",
+    "product": "Jira",
+    "plan": "Premium",
+    "color": "#2360d6",
+    "initials": "J",
+    "summary": "Every logged error minute falls inside confirmed scheduled maintenance",
+    "period": "2026-09",
+    "as_of": "2026-10-08T12:00:00Z",
+    "source_text": "=== Atlassian Service Level Agreement — verbatim excerpt (https://www.atlassian.com/legal/sla) ===\n\nFor Eligible Cloud Products (as listed in the table in Appendix A) Atlassian must provide the following monthly uptime percentage to Customer (the “Service Level Commitment”):\nCloud Plan\nService Level Commitment\nPremium\n99.9%\nEnterprise\n99.95%\n[…]\n2. Service Credits\n2.1. Eligibility. To be eligible to receive a service credit for Atlassian’s failure to meet the Service Level Commitment (“Service Credit”), Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed within fifteen (15) days after the end of the calendar month in which the alleged failure occurred and provide any other reasonably requested information or documentation (for instance, as described here). Atlassian’s monitoring and logging infrastructure is the sole source of truth for determining whether Atlassian has met the Service Level Commitment.\n2.2. Issuance. If Atlassian confirms a failure to meet the Service Level Commitment, Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product, provided that Customer’s account is fully paid up, without any overdue payments or disputes. No refunds or cash value will be given for unused Service Credits. Service Credits may not be transferred or applied to any other Atlassian account or Product. The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).\n[…]\n3. Exclusions\nCustomer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.\n[…]\nAppendix A – Eligible Cloud Products and Covered Experiences\nEligible Cloud Product\nCovered Experience*\nJira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board\n[…]\nNotes: * Except for Bitbucket GIT transactions and Jira Service Management 'Receive Alert', Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions). ** Bitbucket Cloud-hosted builds only (excludes self-hosted runners) *** For purposes of this Service Level Agreement, Loom Business + AI will be considered a Premium Plan Cloud Product.\n[…]\nAppendix B – Service Credits\n- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%\nNotes: * Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.\n[…]\nCalculation\nThe monthly uptime percentage indicated in the above tables is determined by subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month. This calculation is done independently for each Eligible Cloud Product. All calendar months are measured in the UTC time zone.\n[…]\nDefinitions\n“Covered Experiences” are specified for each Eligible Cloud Product in Appendix A.\n“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. For example, subject to the terms of this Service Level Agreement, where Atlassian confirms for a given minute that\n[…]\n\n=== Atlassian Support: Service Level Agreement for Atlassian cloud apps — verbatim excerpt (https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/) ===\n\n[…]\nProcess to get compensation\nIf you think you qualify for compensation, you need to submit two separate requests to get help and compensation.\n- Report your problem and get help. To do that, submit a technical support request during the incident at [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- Request a compensation credit. After you submit a technical support ticket, you have until the 15th the month after the problem occurred to submit a compensation request. To do that, submit a separate SLA compensation request, as explained in the next section.\nYou can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.\n[…]\nTo submit a request:\n- Go to [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- From the dropdown What can we help you with?, select Compensation Requests.\n- From Select a topic, select Cloud Premium SLA compensation request or Cloud Enterprise compensation request, depending on the plan of the app.\n- Enter the rest of the details for your request and click Submit.\nIf multiple incidents occur for one app during a given month, include all of them in one compensation ticket. If incidents occur across apps, you need to create separate tickets for each app.\n[…]\nReceive compensation\nAfter submitting your request, our team will validate the claim and award a service credit when applicable. Once we determine the credit amount, we add it to the ticket. If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.\n[…]\nIf your bill is on monthly payments, your service credit will be based on the monthly fee for the impacted apps. You receive that credit on your next month’s invoice.\nIf you pay your bill annually, your service credit will be based on your annual fee (adjusted for amount per month) for the impacted app. You receive that credit on your next annual invoice.\n[…]\n",
+    "source_hash": "1543f7c4f16b04e9f30928b7067546b10b22f9c3ec4100e15378986034c69373",
+    "source_label": "Atlassian SLA (effective Apr 30, 2026) and compensation procedure — verbatim excerpts",
+    "official_sla_url": "https://www.atlassian.com/legal/sla",
+    "terms": {
+      "vendor": {
+        "value": "Atlassian",
+        "quote": "Atlassian must provide the following monthly uptime percentage to Customer",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "covered_services": {
+        "value": [
+          "Jira"
+        ],
+        "quote": "Jira (Premium and Enterprise)",
+        "section": "Appendix A",
+        "absent": false,
+        "missing_reason": null
+      },
+      "plan": {
+        "value": "Premium",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "uptime_commitment_pct": {
+        "value": "99.9",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "measurement_period": {
+        "value": "calendar_month",
+        "quote": "subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "timezone": {
+        "value": "UTC",
+        "quote": "All calendar months are measured in the UTC time zone.",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "downtime_definition": {
+        "value": {
+          "kind": "request_error_rate",
+          "interval_seconds": 60,
+          "error_threshold_pct": "5",
+          "description": "A Downtime Minute is a minute in which more than 5% of the customer's requests to covered experiences fail.",
+          "covered_experiences": [
+            "View Issue",
+            "Create Issue",
+            "Edit Issue",
+            "View Board"
+          ]
+        },
+        "quote": "“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. […] Jira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board […] Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions).",
+        "section": "Appendix A; Appendix B · Definitions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_tiers": {
+        "value": [
+          {
+            "lower": "99.0",
+            "upper": "99.9",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "95.0",
+            "upper": "99.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          },
+          {
+            "lower": "0",
+            "upper": "95.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "50"
+          }
+        ],
+        "quote": "- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%",
+        "section": "Appendix B · Premium Plan Cloud Products",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_basis": {
+        "value": "affected_service",
+        "quote": "Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.",
+        "section": "Appendix B · Notes",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_cap": {
+        "value": {
+          "pct": "100",
+          "basis": "receiving_invoice"
+        },
+        "quote": "The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      },
+      "min_credit": {
+        "value": null,
+        "quote": null,
+        "section": null,
+        "absent": true,
+        "missing_reason": "Neither the SLA nor the compensation procedure states a minimum credit amount."
+      },
+      "exclusions": {
+        "value": [
+          {
+            "kind": "customer_breach",
+            "description": "Customer is in breach of the Agreement or has not provisioned the product",
+            "machine_checkable": false
+          },
+          {
+            "kind": "unauthorized_use",
+            "description": "Use of the Cloud Products not authorized under the Agreement",
+            "machine_checkable": false
+          },
+          {
+            "kind": "force_majeure",
+            "description": "Force majeure or factors outside Atlassian's reasonable control, including internet access",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_infrastructure",
+            "description": "Customer equipment, software, network connections or other infrastructure",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_data",
+            "description": "Customer Data or Customer Materials",
+            "machine_checkable": false
+          },
+          {
+            "kind": "third_party_products",
+            "description": "Third-Party Products",
+            "machine_checkable": false
+          },
+          {
+            "kind": "excluded_features",
+            "description": "Features excluded from the commitment in the applicable Documentation",
+            "machine_checkable": false
+          },
+          {
+            "kind": "scheduled_maintenance",
+            "description": "Routine scheduled or reasonable emergency maintenance under the Atlassian Maintenance Policy",
+            "machine_checkable": true
+          }
+        ],
+        "quote": "Customer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.",
+        "section": "§3 Exclusions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "prerequisites": {
+        "value": [
+          "production_instance",
+          "account_fully_paid",
+          "support_ticket_during_incident"
+        ],
+        "quote": "provided that Customer’s account is fully paid up, without any overdue payments or disputes […] submit a technical support request during the incident […] You can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.",
+        "section": "§2.2 Issuance; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_window": {
+        "value": {
+          "kind": "days_after_period",
+          "value": 15,
+          "timezone": null
+        },
+        "quote": "within fifteen (15) days after the end of the calendar month in which the alleged failure occurred",
+        "section": "§2.1 Eligibility",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_procedure": {
+        "value": {
+          "channel": "Atlassian support ticket → Compensation Requests → Cloud Premium SLA compensation request",
+          "required_fields": [
+            "account_reference",
+            "service",
+            "period",
+            "incident_times",
+            "calculation"
+          ],
+          "subject_line": null
+        },
+        "quote": "Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed […] From the dropdown What can we help you with?, select Compensation Requests. […] If multiple incidents occur for one app during a given month, include all of them in one compensation ticket.",
+        "section": "§2.1 Eligibility; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "remedy_form": {
+        "value": "service_credit",
+        "quote": "Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product […] No refunds or cash value will be given for unused Service Credits.",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      }
+    },
+    "account": {
+      "customer_id": "cobalt-demo",
+      "plan": "Premium",
+      "service": "Jira",
+      "prerequisites": {
+        "production_instance": true,
+        "account_fully_paid": true,
+        "support_ticket_during_incident": true
+      },
+      "history_complete": true,
+      "non_machine_exclusions_reviewed": true,
+      "receiving_invoice_fees": "2400",
+      "account_reference": "DEMO-COBALT-JIRA",
+      "billing_cycle": "monthly",
+      "display_name": "Cobalt Studio (demo)"
+    },
+    "invoice": {
+      "id": "DEMO-INV-2026-09-COBALT",
+      "customer_id": "cobalt-demo",
+      "vendor": "Atlassian",
+      "service": "Jira",
+      "period": "2026-09",
+      "currency": "USD",
+      "affected_fees": "2400",
+      "fee_allocation": "standalone",
+      "annual_fees": null,
+      "simulated": true
+    },
+    "incidents": [
+      {
+        "id": "DEMO-LOGS-COBALT-2026-09",
+        "title": "Customer request logs, September",
+        "service": "Jira",
+        "intervals": [],
+        "interval_basis": "Computed by code from a simulated per-minute request log: minutes where more than 5% of covered-experience requests failed",
+        "context_windows": [],
+        "severity": "major_outage",
+        "source_url": null,
+        "evidence_kind": "customer_metrics",
+        "metric_verified": true,
+        "related_incident": null,
+        "experiences": [],
+        "components": [],
+        "region": null,
+        "started_at": null,
+        "log": {
+          "path": "data/fixtures/logs/cobalt-jira-2026-09.csv.gz",
+          "sha256": "1e539369b488c8988810dbb8fb74d8423c6b6672f40c60421f908054334649c5"
+        },
+        "log_summary": null,
+        "simulated": true,
+        "notes": "Simulated for this demo: 86,400 log rows. A real claim would attach the customer's own request logs."
+      }
+    ],
+    "maintenance": [
+      {
+        "service": "Jira",
+        "interval": {
+          "start": "2026-09-19T01:45:00Z",
+          "end": "2026-09-19T03:30:00Z"
+        },
+        "exclusion_confirmed": true,
+        "reference": "DEMO-MAINT-0919",
+        "simulated": true
+      }
+    ],
+    "simulated": true,
+    "role": "refusal",
+    "dispute_rule": {
+      "value": {
+        "business_days": 3
+      },
+      "quote": "If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.",
+      "section": "Compensation procedure · Receive compensation",
+      "absent": false,
+      "missing_reason": null
+    },
+    "source_refs": [
+      {
+        "id": "atlassian-sla",
+        "title": "Atlassian Service Level Agreement",
+        "url": "https://www.atlassian.com/legal/sla",
+        "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+        "effective_date": "2026-04-30",
+        "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+        "text_sha256": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+        "excerpt_sha256": "b2e8de0bc3005e2e839fe458fec92e63847bfe073f97ab4b17d07e380d81c277",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      },
+      {
+        "id": "atlassian-compensation",
+        "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+        "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+        "retrieved_at": "2026-10-30T05:22:49.304399+00:00",
+        "effective_date": null,
+        "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+        "text_sha256": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050",
+        "excerpt_sha256": "b96dc7ba3d40848326e28474c87794cb574a75aca639abf4a0195e45f611a0dd",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      }
+    ],
+    "provenance": [
+      {
+        "item": "Agreement terms",
+        "kind": "real",
+        "detail": "Quoted from Atlassian's public SLA and compensation procedure; values reviewed against the quotes."
+      },
+      {
+        "item": "Request logs and maintenance notice",
+        "kind": "simulated",
+        "detail": "A simulated per-minute log (86,400 rows): 75 Downtime Minutes, all inside a confirmed scheduled maintenance window."
+      },
+      {
+        "item": "Customer, invoice, receiving invoice, and support ticket",
+        "kind": "simulated",
+        "detail": "Demo records; no real customer or bill."
+      }
+    ]
+  },
+  {
+    "id": "jira-oct-degraded",
+    "vendor": "Atlassian",
+    "product": "Jira",
+    "plan": "Premium",
+    "color": "#2360d6",
+    "initials": "J",
+    "summary": "Real Oct 21 sidebar degradation; October is still open",
+    "period": "2026-10",
+    "as_of": "2026-10-29T12:00:00Z",
+    "source_text": "=== Atlassian Service Level Agreement — verbatim excerpt (https://www.atlassian.com/legal/sla) ===\n\nFor Eligible Cloud Products (as listed in the table in Appendix A) Atlassian must provide the following monthly uptime percentage to Customer (the “Service Level Commitment”):\nCloud Plan\nService Level Commitment\nPremium\n99.9%\nEnterprise\n99.95%\n[…]\n2. Service Credits\n2.1. Eligibility. To be eligible to receive a service credit for Atlassian’s failure to meet the Service Level Commitment (“Service Credit”), Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed within fifteen (15) days after the end of the calendar month in which the alleged failure occurred and provide any other reasonably requested information or documentation (for instance, as described here). Atlassian’s monitoring and logging infrastructure is the sole source of truth for determining whether Atlassian has met the Service Level Commitment.\n2.2. Issuance. If Atlassian confirms a failure to meet the Service Level Commitment, Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product, provided that Customer’s account is fully paid up, without any overdue payments or disputes. No refunds or cash value will be given for unused Service Credits. Service Credits may not be transferred or applied to any other Atlassian account or Product. The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).\n[…]\n3. Exclusions\nCustomer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.\n[…]\nAppendix A – Eligible Cloud Products and Covered Experiences\nEligible Cloud Product\nCovered Experience*\nJira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board\n[…]\nNotes: * Except for Bitbucket GIT transactions and Jira Service Management 'Receive Alert', Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions). ** Bitbucket Cloud-hosted builds only (excludes self-hosted runners) *** For purposes of this Service Level Agreement, Loom Business + AI will be considered a Premium Plan Cloud Product.\n[…]\nAppendix B – Service Credits\n- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%\nNotes: * Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.\n[…]\nCalculation\nThe monthly uptime percentage indicated in the above tables is determined by subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month. This calculation is done independently for each Eligible Cloud Product. All calendar months are measured in the UTC time zone.\n[…]\nDefinitions\n“Covered Experiences” are specified for each Eligible Cloud Product in Appendix A.\n“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. For example, subject to the terms of this Service Level Agreement, where Atlassian confirms for a given minute that\n[…]\n\n=== Atlassian Support: Service Level Agreement for Atlassian cloud apps — verbatim excerpt (https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/) ===\n\n[…]\nProcess to get compensation\nIf you think you qualify for compensation, you need to submit two separate requests to get help and compensation.\n- Report your problem and get help. To do that, submit a technical support request during the incident at [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- Request a compensation credit. After you submit a technical support ticket, you have until the 15th the month after the problem occurred to submit a compensation request. To do that, submit a separate SLA compensation request, as explained in the next section.\nYou can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.\n[…]\nTo submit a request:\n- Go to [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).\n- From the dropdown What can we help you with?, select Compensation Requests.\n- From Select a topic, select Cloud Premium SLA compensation request or Cloud Enterprise compensation request, depending on the plan of the app.\n- Enter the rest of the details for your request and click Submit.\nIf multiple incidents occur for one app during a given month, include all of them in one compensation ticket. If incidents occur across apps, you need to create separate tickets for each app.\n[…]\nReceive compensation\nAfter submitting your request, our team will validate the claim and award a service credit when applicable. Once we determine the credit amount, we add it to the ticket. If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.\n[…]\nIf your bill is on monthly payments, your service credit will be based on the monthly fee for the impacted apps. You receive that credit on your next month’s invoice.\nIf you pay your bill annually, your service credit will be based on your annual fee (adjusted for amount per month) for the impacted app. You receive that credit on your next annual invoice.\n[…]\n",
+    "source_hash": "1543f7c4f16b04e9f30928b7067546b10b22f9c3ec4100e15378986034c69373",
+    "source_label": "Atlassian SLA (effective Apr 30, 2026) and compensation procedure — verbatim excerpts",
+    "official_sla_url": "https://www.atlassian.com/legal/sla",
+    "terms": {
+      "vendor": {
+        "value": "Atlassian",
+        "quote": "Atlassian must provide the following monthly uptime percentage to Customer",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "covered_services": {
+        "value": [
+          "Jira"
+        ],
+        "quote": "Jira (Premium and Enterprise)",
+        "section": "Appendix A",
+        "absent": false,
+        "missing_reason": null
+      },
+      "plan": {
+        "value": "Premium",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "uptime_commitment_pct": {
+        "value": "99.9",
+        "quote": "Cloud Plan\nService Level Commitment\nPremium\n99.9%",
+        "section": "§1 Service Level Commitment",
+        "absent": false,
+        "missing_reason": null
+      },
+      "measurement_period": {
+        "value": "calendar_month",
+        "quote": "subtracting from 100% the percentage of Downtime Minutes (as defined below) out of the total minutes in the relevant calendar month",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "timezone": {
+        "value": "UTC",
+        "quote": "All calendar months are measured in the UTC time zone.",
+        "section": "Appendix B · Calculation",
+        "absent": false,
+        "missing_reason": null
+      },
+      "downtime_definition": {
+        "value": {
+          "kind": "request_error_rate",
+          "interval_seconds": 60,
+          "error_threshold_pct": "5",
+          "description": "A Downtime Minute is a minute in which more than 5% of the customer's requests to covered experiences fail.",
+          "covered_experiences": [
+            "View Issue",
+            "Create Issue",
+            "Edit Issue",
+            "View Board"
+          ]
+        },
+        "quote": "“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.\n“Error Rate” means, over a given 1-minute period, the percentage of Customer’s requests to Covered Experiences resulting in an error out of Customer’s total requests to those Covered Experiences. […] Jira (Premium and Enterprise)\nView Issue\nCreate Issue\nEdit Issue\nView Board […] Covered Experiences include browser-based experiences only (not, e.g., integrations, API calls or mobile versions).",
+        "section": "Appendix A; Appendix B · Definitions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_tiers": {
+        "value": [
+          {
+            "lower": "99.0",
+            "upper": "99.9",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "95.0",
+            "upper": "99.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          },
+          {
+            "lower": "0",
+            "upper": "95.0",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "50"
+          }
+        ],
+        "quote": "- Premium Plan Cloud Products -\nMonthly Uptime Percentage\nService Credit*\nLess than 99.9% but greater than or equal to 99.0%\n10%\nLess than 99.0% but greater than or equal to 95.0%\n25%\nLess than 95.0%\n50%",
+        "section": "Appendix B · Premium Plan Cloud Products",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_basis": {
+        "value": "affected_service",
+        "quote": "Percentage of the monthly fees attributed to the affected Eligible Cloud Product. The percentage of monthly fees attributable to an Eligible Cloud Product when purchased together with other Products under one SKU will be determined by Atlassian.",
+        "section": "Appendix B · Notes",
+        "absent": false,
+        "missing_reason": null
+      },
+      "credit_cap": {
+        "value": {
+          "pct": "100",
+          "basis": "receiving_invoice"
+        },
+        "quote": "The aggregate maximum Service Credit applied to an invoice will not exceed 100% of the amount invoiced for the affected Cloud Product in that invoice billing period (which, since Service Credits are applied to future payments, is not the month in which the affected Cloud Product was unavailable).",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      },
+      "min_credit": {
+        "value": null,
+        "quote": null,
+        "section": null,
+        "absent": true,
+        "missing_reason": "Neither the SLA nor the compensation procedure states a minimum credit amount."
+      },
+      "exclusions": {
+        "value": [
+          {
+            "kind": "customer_breach",
+            "description": "Customer is in breach of the Agreement or has not provisioned the product",
+            "machine_checkable": false
+          },
+          {
+            "kind": "unauthorized_use",
+            "description": "Use of the Cloud Products not authorized under the Agreement",
+            "machine_checkable": false
+          },
+          {
+            "kind": "force_majeure",
+            "description": "Force majeure or factors outside Atlassian's reasonable control, including internet access",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_infrastructure",
+            "description": "Customer equipment, software, network connections or other infrastructure",
+            "machine_checkable": false
+          },
+          {
+            "kind": "customer_data",
+            "description": "Customer Data or Customer Materials",
+            "machine_checkable": false
+          },
+          {
+            "kind": "third_party_products",
+            "description": "Third-Party Products",
+            "machine_checkable": false
+          },
+          {
+            "kind": "excluded_features",
+            "description": "Features excluded from the commitment in the applicable Documentation",
+            "machine_checkable": false
+          },
+          {
+            "kind": "scheduled_maintenance",
+            "description": "Routine scheduled or reasonable emergency maintenance under the Atlassian Maintenance Policy",
+            "machine_checkable": true
+          }
+        ],
+        "quote": "Customer is not entitled to Service Credits if Customer is in breach of the Agreement (as defined below) or has not provisioned the relevant Cloud Product. The Service Level Commitment does not include unavailability to the extent due to: (a) Customer’s use of the Cloud Products in a manner not authorized under the Agreement; (b) force majeure events or other factors outside of Atlassian’s reasonable control, including internet access or related problems; (c) Customer equipment, software, network connections or other infrastructure; (d) Customer Data or Customer Materials (or similar concepts defined in the Agreement); (e) Third-Party Products; or (f) routine scheduled maintenance or reasonable emergency maintenance as stated in the Atlassian Maintenance Policy. The Service Level Commitment does not apply to (i) sandbox instances or Free or Beta Products (or similar concepts in the Agreement) or (ii) features excluded from the Service Level Commitment in the applicable Documentation.",
+        "section": "§3 Exclusions",
+        "absent": false,
+        "missing_reason": null
+      },
+      "prerequisites": {
+        "value": [
+          "production_instance",
+          "account_fully_paid",
+          "support_ticket_during_incident"
+        ],
+        "quote": "provided that Customer’s account is fully paid up, without any overdue payments or disputes […] submit a technical support request during the incident […] You can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.",
+        "section": "§2.2 Issuance; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_window": {
+        "value": {
+          "kind": "days_after_period",
+          "value": 15,
+          "timezone": null
+        },
+        "quote": "within fifteen (15) days after the end of the calendar month in which the alleged failure occurred",
+        "section": "§2.1 Eligibility",
+        "absent": false,
+        "missing_reason": null
+      },
+      "claim_procedure": {
+        "value": {
+          "channel": "Atlassian support ticket → Compensation Requests → Cloud Premium SLA compensation request",
+          "required_fields": [
+            "account_reference",
+            "service",
+            "period",
+            "incident_times",
+            "calculation"
+          ],
+          "subject_line": null
+        },
+        "quote": "Customer must submit a ticket at https://support.atlassian.com with all fields fully and accurately completed […] From the dropdown What can we help you with?, select Compensation Requests. […] If multiple incidents occur for one app during a given month, include all of them in one compensation ticket.",
+        "section": "§2.1 Eligibility; compensation procedure",
+        "absent": false,
+        "missing_reason": null
+      },
+      "remedy_form": {
+        "value": "service_credit",
+        "quote": "Atlassian will apply the Service Credit, which will be calculated as described in Appendix B, against a future payment due from Customer for the affected Cloud Product […] No refunds or cash value will be given for unused Service Credits.",
+        "section": "§2.2 Issuance",
+        "absent": false,
+        "missing_reason": null
+      }
+    },
+    "account": {
+      "customer_id": "northstar-demo",
+      "plan": "Premium",
+      "service": "Jira",
+      "prerequisites": {
+        "production_instance": true,
+        "account_fully_paid": true,
+        "support_ticket_during_incident": null
+      },
+      "history_complete": false,
+      "non_machine_exclusions_reviewed": false,
+      "receiving_invoice_fees": null,
+      "account_reference": "DEMO-NORTHSTAR-JIRA",
+      "billing_cycle": "monthly",
+      "display_name": "Northstar Analytics (demo)"
+    },
+    "invoice": {
+      "id": "DEMO-INV-2026-10-NORTHSTAR",
+      "customer_id": "northstar-demo",
+      "vendor": "Atlassian",
+      "service": "Jira",
+      "period": "2026-10",
+      "currency": "USD",
+      "affected_fees": "9000",
+      "fee_allocation": "standalone",
+      "annual_fees": null,
+      "simulated": true
+    },
+    "incidents": [
+      {
+        "id": "1yh59bb4lw20",
+        "title": "Jira - Project Sidebar Loading Degradation",
+        "service": "Jira",
+        "intervals": [
+          {
+            "start": "2026-10-21T14:28:49.659000Z",
+            "end": "2026-10-21T15:01:51.735000Z"
+          }
+        ],
+        "interval_basis": "Public status updates: in-scope components in degraded performance",
+        "context_windows": [],
+        "severity": "degraded_performance",
+        "source_url": "https://jira-software.status.atlassian.com/incidents/1yh59bb4lw20",
+        "evidence_kind": "public_timeline",
+        "metric_verified": false,
+        "related_incident": null,
+        "experiences": [],
+        "components": [
+          "Viewing content"
+        ],
+        "region": null,
+        "started_at": "2026-10-21T14:28:49.560000Z",
+        "log": null,
+        "log_summary": null,
+        "simulated": false,
+        "notes": "Real public incident. The vendor reported degraded performance, which is not counted as an outage; only the customer's request logs can show Downtime Minutes."
+      }
+    ],
+    "maintenance": [],
+    "simulated": true,
+    "role": "missing_evidence",
+    "dispute_rule": {
+      "value": {
+        "business_days": 3
+      },
+      "quote": "If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.",
+      "section": "Compensation procedure · Receive compensation",
+      "absent": false,
+      "missing_reason": null
+    },
+    "source_refs": [
+      {
+        "id": "atlassian-sla",
+        "title": "Atlassian Service Level Agreement",
+        "url": "https://www.atlassian.com/legal/sla",
+        "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+        "effective_date": "2026-04-30",
+        "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+        "text_sha256": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+        "excerpt_sha256": "b2e8de0bc3005e2e839fe458fec92e63847bfe073f97ab4b17d07e380d81c277",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      },
+      {
+        "id": "atlassian-compensation",
+        "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+        "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+        "retrieved_at": "2026-10-30T05:22:49.304399+00:00",
+        "effective_date": null,
+        "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+        "text_sha256": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050",
+        "excerpt_sha256": "b96dc7ba3d40848326e28474c87794cb574a75aca639abf4a0195e45f611a0dd",
+        "parser": "trafilatura 2.3.1 (txt, tables, links)"
+      }
+    ],
+    "provenance": [
+      {
+        "item": "Agreement terms",
+        "kind": "real",
+        "detail": "Quoted from Atlassian's public SLA and compensation procedure; values reviewed against the quotes."
+      },
+      {
+        "item": "Oct 21 incident",
+        "kind": "real",
+        "detail": "Atlassian Statuspage incident 1yh59bb4lw20; covered components were degraded, not in outage."
+      },
+      {
+        "item": "Customer evidence",
+        "kind": "simulated",
+        "detail": "Not yet collected: no request logs or support ticket for October."
+      },
+      {
+        "item": "Customer and invoice",
+        "kind": "simulated",
+        "detail": "Demo records; no real customer or bill."
+      }
+    ]
+  }
+]

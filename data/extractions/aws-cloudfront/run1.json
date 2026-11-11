@@ -1,0 +1,253 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "Amazon Web Services, Inc.",
+      "quote": "between Amazon Web Services, Inc. and its affiliates (\u201cAWS\u201d, \u201cus\u201d or \u201cwe\u201d)",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "Amazon CloudFront"
+      ],
+      "quote": "This Amazon CloudFront Service Level Agreement (\u201cSLA\u201d) is a policy governing the use of Amazon CloudFront",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not name any plans; it applies to Amazon CloudFront generally, so no 'Standard' plan is stated."
+    },
+    "uptime_commitment_pct": {
+      "value": "99.9",
+      "quote": "Monthly Uptime Percentage (defined below) of at least 99.9% during any monthly billing cycle",
+      "section": "Service Commitment",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "billing_cycle",
+      "quote": "during any monthly billing cycle",
+      "section": "Service Commitment",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not specify a time zone for measuring the billing cycle."
+    },
+    "downtime_definition": {
+      "value": {
+        "kind": "request_error_rate",
+        "interval_seconds": 300,
+        "error_threshold_pct": null,
+        "description": "Error Rate is internal server errors returned by Amazon CloudFront divided by total requests in each five minute period, calculated per account. Monthly Uptime Percentage is 100% minus the average of the Error Rates over all five minute periods in the monthly billing cycle. Errors arising from SLA Exclusions are not counted.",
+        "covered_experiences": []
+      },
+      "quote": "\u201cError Rate\u201d means: (i) the total number of internal server errors returned by Amazon CloudFront divided by (ii) the total number of requests during that five minute period. [\u2026] \u201cMonthly Uptime Percentage\u201d is calculated by subtracting from 100% the average of the Error Rates from each five minute period in the monthly billing cycle.",
+      "section": "Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "99.0",
+          "upper": "99.9",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "10"
+        },
+        {
+          "lower": "95.0",
+          "upper": "99.0",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "25"
+        },
+        {
+          "lower": "0",
+          "upper": "95.0",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "100"
+        }
+      ],
+      "quote": "Less than 99.9% but greater than or equal to 99.0% | 10% | [\u2026] Less than 99.0% but greater than or equal to 95.0% | 25% | [\u2026] Less than 95.0% | 100%",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "Service Credits are calculated as a percentage of the total charges paid by you for Amazon CloudFront for the billing cycle in which the error occurred in accordance with the schedule below.",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": false,
+      "missing_reason": "The source states no explicit cap percentage; the highest tier is 100% of charges but no cap is stated as such."
+    },
+    "min_credit": {
+      "value": {
+        "amount": "1",
+        "inclusive": false
+      },
+      "quote": "A Service Credit will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than one dollar ($1 USD).",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "other",
+          "description": "Suspension described in Section 6.1 of the AWS Agreement",
+          "machine_checkable": false
+        },
+        {
+          "kind": "force_majeure",
+          "description": "Factors outside our reasonable control, including force majeure or Internet access or related problems beyond the demarcation point of Amazon CloudFront",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Results from any actions or inactions of the customer",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_infrastructure",
+          "description": "Results from the customer's equipment, software or other technology",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Suspension and termination of the customer's right to use Amazon CloudFront in accordance with the AWS Agreement",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Exceeding usage limits stated in the Amazon CloudFront documentation",
+          "machine_checkable": true
+        },
+        {
+          "kind": "third_party_products",
+          "description": "Use of an origin server other than Amazon S3",
+          "machine_checkable": true
+        }
+      ],
+      "quote": "(i) that result from a suspension described in Section 6.1 of the AWS Agreement; (ii) caused by factors outside of our reasonable control, including any force majeure event or Internet access or related problems beyond the demarcation point of Amazon CloudFront; (iii) that result from any actions or inactions of you; (iv) that result from your equipment, software or other technology; (v) arising from our suspension and termination of your right to use Amazon CloudFront in accordance with the AWS Agreement; (vi) that result from exceeding usage limits stated in the Amazon CloudFront documentation; or (vii) that result from use of an origin server other than Amazon S3",
+      "section": "Amazon CloudFront SLA Exclusions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "other"
+      ],
+      "quote": "To receive a Service Credit, you must submit a claim by [opening a case in the AWS Support Center.]",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "billing_cycles_after",
+        "value": 2,
+        "timezone": null
+      },
+      "quote": "the credit request must be received by us by the end of the second billing cycle after which the incident occurred",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "AWS Support Center case",
+        "required_fields": [
+          "incident_times",
+          "request_logs"
+        ],
+        "subject_line": "SLA Credit Request"
+      },
+      "quote": "you must submit a claim by [opening a case in the AWS Support Center.] To be eligible, the credit request must be received by us by the end of the second billing cycle after which the incident occurred and must include: i. the words \u201cSLA Credit Request\u201d in the subject line; ii. the dates and times of each incident of non-zero Error Rates that you are claiming; and iii. your request logs that document the errors and corroborate your claimed outage",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Service Credits are calculated as a percentage of the total charges paid by you for Amazon CloudFront for the billing cycle in which the error occurred in accordance with the schedule below. [\u2026] We will apply any Service Credits only against future Amazon CloudFront payments otherwise due from you.",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "178dbc8f45f54d7de36bf63c720c16b5d35ed9be264c993d764fea75df79f798",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 1,
+  "service": "Amazon CloudFront",
+  "plan": "Standard",
+  "extracted_at": "2026-10-31T01:55:31.875706+00:00",
+  "calls": 3,
+  "conversion_notes": [],
+  "usage": {
+    "input_tokens": 17233,
+    "output_tokens": 2471
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": false,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": false,
+    "min_credit": true,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": false,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "absent",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "verified",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "verified",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "unverified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0592,
+  "split": "tuning"
+}

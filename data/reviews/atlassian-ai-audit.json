@@ -1,0 +1,212 @@
+{
+  "mode": "post_hoc_ai_assisted_reference_audit",
+  "confirmed_human_review": false,
+  "reviewer": "Codex (AI assistant)",
+  "reviewed_at": "2026-11-10",
+  "document": "atlassian",
+  "scenario_snapshot_sha256": "fa45c3fa37d4dbd4fe3626ccc78e22832aa481e1e203238c63913b27dd88a1b6",
+  "source_hash": "84beb5c6756a9b39a2ce37aa67852670470e3a9057659f7987defd5d0008bc21",
+  "runs": [
+    {
+      "run": 1,
+      "fields": {
+        "vendor": true,
+        "covered_services": true,
+        "plan": true,
+        "uptime_commitment_pct": true,
+        "measurement_period": true,
+        "timezone": true,
+        "downtime_definition": true,
+        "credit_tiers": true,
+        "credit_basis": true,
+        "credit_cap": true,
+        "min_credit": true,
+        "exclusions": false,
+        "prerequisites": true,
+        "claim_window": true,
+        "claim_procedure": true,
+        "remedy_form": true
+      },
+      "credit_table_exact": true,
+      "decisions": [
+        {
+          "case": "jira-sept-claim",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-missing-evidence",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-maintenance",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-oct-degraded",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        }
+      ],
+      "material_field_agreement": 0.9375
+    },
+    {
+      "run": 2,
+      "fields": {
+        "vendor": true,
+        "covered_services": true,
+        "plan": true,
+        "uptime_commitment_pct": true,
+        "measurement_period": true,
+        "timezone": true,
+        "downtime_definition": true,
+        "credit_tiers": true,
+        "credit_basis": true,
+        "credit_cap": true,
+        "min_credit": true,
+        "exclusions": false,
+        "prerequisites": true,
+        "claim_window": true,
+        "claim_procedure": true,
+        "remedy_form": true
+      },
+      "credit_table_exact": true,
+      "decisions": [
+        {
+          "case": "jira-sept-claim",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-missing-evidence",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-maintenance",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-oct-degraded",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        }
+      ],
+      "material_field_agreement": 0.9375
+    },
+    {
+      "run": 3,
+      "fields": {
+        "vendor": true,
+        "covered_services": true,
+        "plan": true,
+        "uptime_commitment_pct": true,
+        "measurement_period": true,
+        "timezone": true,
+        "downtime_definition": true,
+        "credit_tiers": true,
+        "credit_basis": true,
+        "credit_cap": true,
+        "min_credit": true,
+        "exclusions": false,
+        "prerequisites": true,
+        "claim_window": true,
+        "claim_procedure": true,
+        "remedy_form": true
+      },
+      "credit_table_exact": true,
+      "decisions": [
+        {
+          "case": "jira-sept-claim",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-missing-evidence",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-sept-maintenance",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        },
+        {
+          "case": "jira-oct-degraded",
+          "reference_outcome": "needs_review",
+          "model_outcome": "needs_review",
+          "reference_amount": "0.00",
+          "model_amount": "0.00",
+          "both_need_review": true,
+          "agreement": true,
+          "false_positive": false
+        }
+      ],
+      "material_field_agreement": 0.9375
+    }
+  ],
+  "false_positive_decisions": 0,
+  "decision_comparisons": 12,
+  "both_need_review": 12,
+  "conclusive_decision_matches": 0,
+  "worst_material_field_agreement": 0.9375,
+  "limitation": "AI-checked proposed labels, not human-reviewed ground truth or extraction accuracy. One agreement and four existing scenarios; both-needs-review matches do not demonstrate a priced decision. Exact field comparisons include implementation-specific exclusion labels and machine-checkability flags. Saved runs were visible during this post-hoc audit."
+}

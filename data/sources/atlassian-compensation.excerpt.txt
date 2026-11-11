@@ -1,0 +1,24 @@
+[…]
+Process to get compensation
+If you think you qualify for compensation, you need to submit two separate requests to get help and compensation.
+- Report your problem and get help. To do that, submit a technical support request during the incident at [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).
+- Request a compensation credit. After you submit a technical support ticket, you have until the 15th the month after the problem occurred to submit a compensation request. To do that, submit a separate SLA compensation request, as explained in the next section.
+You can only request SLA compensation for production instances of Premium and Enterprise apps. Trial and sandbox instances are ineligible for SLA compensation.
+[…]
+You can submit a request for an app if you have one of the following roles:
+- Billing contact or technical contact (original billing system), or Billing admin (new billing system). [Understand billing administration](https://support.atlassian.com/subscriptions-and-billing/docs/understand-billing-administration/)
+- Site admin for the app or organization admin. [Learn more about admin permissions](https://support.atlassian.com/user-management/docs/give-users-admin-permissions/)
+[…]
+To submit a request:
+- Go to [support.atlassian.com/contact](https://support.atlassian.com/contact/#/).
+- From the dropdown What can we help you with?, select Compensation Requests.
+- From Select a topic, select Cloud Premium SLA compensation request or Cloud Enterprise compensation request, depending on the plan of the app.
+- Enter the rest of the details for your request and click Submit.
+If multiple incidents occur for one app during a given month, include all of them in one compensation ticket. If incidents occur across apps, you need to create separate tickets for each app.
+[…]
+Receive compensation
+After submitting your request, our team will validate the claim and award a service credit when applicable. Once we determine the credit amount, we add it to the ticket. If you disagree with the amount awarded, you have 3 business days to request that we revisit the claim.
+[…]
+If your bill is on monthly payments, your service credit will be based on the monthly fee for the impacted apps. You receive that credit on your next month’s invoice.
+If you pay your bill annually, your service credit will be based on your annual fee (adjusted for amount per month) for the impacted app. You receive that credit on your next annual invoice.
+[…]

@@ -1,0 +1,543 @@
+{
+  "offline_validation": {
+    "label": "Authored fixture checks \u2014 not live extraction accuracy",
+    "cases": [
+      {
+        "id": "jira-sept-claim",
+        "role": "claim_candidate",
+        "outcome": "eligible",
+        "amount": "900.00",
+        "provisional_estimate": "900.00",
+        "expected_result_matches": true,
+        "quotes_verified": 15,
+        "terms_confirmed_absent": 1,
+        "terms": 16
+      },
+      {
+        "id": "jira-sept-missing-evidence",
+        "role": "missing_evidence",
+        "outcome": "needs_review",
+        "amount": "0.00",
+        "provisional_estimate": "480.00",
+        "expected_result_matches": true,
+        "quotes_verified": 15,
+        "terms_confirmed_absent": 1,
+        "terms": 16
+      },
+      {
+        "id": "jira-sept-maintenance",
+        "role": "refusal",
+        "outcome": "not_eligible",
+        "amount": "0.00",
+        "provisional_estimate": "0.00",
+        "expected_result_matches": true,
+        "quotes_verified": 15,
+        "terms_confirmed_absent": 1,
+        "terms": 16
+      },
+      {
+        "id": "jira-oct-degraded",
+        "role": "missing_evidence",
+        "outcome": "needs_review",
+        "amount": "0.00",
+        "provisional_estimate": null,
+        "expected_result_matches": true,
+        "quotes_verified": 15,
+        "terms_confirmed_absent": 1,
+        "terms": 16
+      },
+      {
+        "id": "github",
+        "role": "capability_boundary",
+        "outcome": "needs_review",
+        "amount": "0.00",
+        "provisional_estimate": null,
+        "expected_result_matches": true,
+        "quotes_verified": 16,
+        "terms_confirmed_absent": 0,
+        "terms": 16
+      },
+      {
+        "id": "cloudflare",
+        "role": "capability_boundary",
+        "outcome": "needs_review",
+        "amount": "0.00",
+        "provisional_estimate": null,
+        "expected_result_matches": true,
+        "quotes_verified": 16,
+        "terms_confirmed_absent": 0,
+        "terms": 16
+      }
+    ]
+  },
+  "live_extraction": {
+    "status": "runs_saved",
+    "label": "Model runs saved; accuracy not scored because no gold labels are human-reviewed. Quote checks and run consistency are label-free; agreement with draft labels is not accuracy.",
+    "model_runs": [
+      {
+        "id": "atlassian",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 1.0,
+        "unverified_terms": [],
+        "terms_missing": [
+          0,
+          0,
+          0
+        ],
+        "terms_absent": [
+          1,
+          1,
+          1
+        ],
+        "run_consistency": 0.9375,
+        "inconsistent_fields": [
+          "exclusions"
+        ],
+        "tokens": {
+          "input": 70014,
+          "output": 9589
+        },
+        "draft_label_agreement": {
+          "review_status": "machine_drafted",
+          "note": "Agreement with labels nobody has reviewed is not accuracy.",
+          "worst_field_agreement": 0.8125,
+          "disagreeing_fields": [
+            "claim_procedure",
+            "exclusions",
+            "prerequisites"
+          ],
+          "decision_matches": 0,
+          "both_review": 6,
+          "false_positive_eligible": 0,
+          "decision_comparisons": 12,
+          "decisions": [
+            {
+              "scenario": "jira-sept-claim",
+              "expected": "eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-claim",
+              "expected": "eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-claim",
+              "expected": "eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-missing-evidence",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-missing-evidence",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-missing-evidence",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-maintenance",
+              "expected": "not_eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-maintenance",
+              "expected": "not_eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-sept-maintenance",
+              "expected": "not_eligible",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": false,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-oct-degraded",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-oct-degraded",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            },
+            {
+              "scenario": "jira-oct-degraded",
+              "expected": "needs_review",
+              "actual": "needs_review",
+              "match": false,
+              "both_review": true,
+              "false_positive": false
+            }
+          ],
+          "decisions_skipped": null
+        }
+      },
+      {
+        "id": "github",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          0.9230769230769231
+        ],
+        "quote_match_rate_worst": 0.9230769230769231,
+        "unverified_terms": [
+          "timezone"
+        ],
+        "terms_missing": [
+          2,
+          2,
+          2
+        ],
+        "terms_absent": [
+          2,
+          2,
+          1
+        ],
+        "run_consistency": 0.875,
+        "inconsistent_fields": [
+          "timezone",
+          "exclusions"
+        ],
+        "tokens": {
+          "input": 45975,
+          "output": 8761
+        }
+      },
+      {
+        "id": "cloudflare",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 1.0,
+        "unverified_terms": [],
+        "terms_missing": [
+          2,
+          2,
+          1
+        ],
+        "terms_absent": [
+          3,
+          3,
+          3
+        ],
+        "run_consistency": 0.625,
+        "inconsistent_fields": [
+          "covered_services",
+          "measurement_period",
+          "downtime_definition",
+          "exclusions",
+          "prerequisites",
+          "claim_window"
+        ],
+        "tokens": {
+          "input": 47568,
+          "output": 7285
+        }
+      },
+      {
+        "id": "aws-waf",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 1.0,
+        "unverified_terms": [],
+        "terms_missing": [
+          1,
+          1,
+          1
+        ],
+        "terms_absent": [
+          2,
+          2,
+          2
+        ],
+        "run_consistency": 0.875,
+        "inconsistent_fields": [
+          "prerequisites",
+          "claim_procedure"
+        ],
+        "tokens": {
+          "input": 42393,
+          "output": 7780
+        }
+      },
+      {
+        "id": "aws-cloudfront",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          0.9230769230769231,
+          0.9230769230769231,
+          1.0
+        ],
+        "quote_match_rate_worst": 0.9230769230769231,
+        "unverified_terms": [
+          "claim_procedure"
+        ],
+        "terms_missing": [
+          1,
+          1,
+          1
+        ],
+        "terms_absent": [
+          2,
+          2,
+          2
+        ],
+        "run_consistency": 0.9375,
+        "inconsistent_fields": [
+          "exclusions"
+        ],
+        "tokens": {
+          "input": 51699,
+          "output": 8439
+        }
+      },
+      {
+        "id": "digitalocean-droplets",
+        "split": "tuning",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 1.0,
+        "unverified_terms": [],
+        "terms_missing": [
+          2,
+          1,
+          2
+        ],
+        "terms_absent": [
+          4,
+          5,
+          4
+        ],
+        "run_consistency": 0.9375,
+        "inconsistent_fields": [
+          "credit_cap"
+        ],
+        "tokens": {
+          "input": 32331,
+          "output": 4756
+        }
+      },
+      {
+        "id": "google-cloud-dns",
+        "split": "held_out",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          0.9166666666666666,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 0.9166666666666666,
+        "unverified_terms": [
+          "vendor"
+        ],
+        "terms_missing": [
+          1,
+          1,
+          1
+        ],
+        "terms_absent": [
+          3,
+          3,
+          3
+        ],
+        "run_consistency": 0.875,
+        "inconsistent_fields": [
+          "credit_cap",
+          "exclusions"
+        ],
+        "tokens": {
+          "input": 34590,
+          "output": 6657
+        }
+      },
+      {
+        "id": "expo-eas",
+        "split": "held_out",
+        "status": "runs_saved",
+        "runs": 3,
+        "models": [
+          "claude-sonnet-5-5"
+        ],
+        "quote_match_rates": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quote_match_rate_worst": 1.0,
+        "unverified_terms": [],
+        "terms_missing": [
+          1,
+          0,
+          1
+        ],
+        "terms_absent": [
+          2,
+          2,
+          2
+        ],
+        "run_consistency": 0.625,
+        "inconsistent_fields": [
+          "downtime_definition",
+          "credit_tiers",
+          "credit_basis",
+          "credit_cap",
+          "exclusions",
+          "claim_procedure"
+        ],
+        "tokens": {
+          "input": 33519,
+          "output": 5421
+        }
+      }
+    ],
+    "frozen_config": {
+      "frozen": true,
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "cited-terms-v4",
+      "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+      "effort": "medium",
+      "frozen_at": "2026-10-31T01:57:49.673089+00:00"
+    },
+    "tuning_documents": 6,
+    "held_out_documents": 2,
+    "documents": [
+      {
+        "id": "atlassian",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "Draft gold labels exist but have not been reviewed by a person"
+      },
+      {
+        "id": "github",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "cloudflare",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "aws-waf",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "aws-cloudfront",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "digitalocean-droplets",
+        "split": "tuning",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "google-cloud-dns",
+        "split": "held_out",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      },
+      {
+        "id": "expo-eas",
+        "split": "held_out",
+        "status": "not_run",
+        "reason": "No gold labels yet"
+      }
+    ]
+  }
+}

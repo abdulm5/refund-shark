@@ -1,0 +1,199 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "DigitalOcean",
+      "quote": "This DigitalOcean Service Level Agreement (\u201cSLA\u201d) governs your use of DigitalOcean Droplets",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "DigitalOcean Droplets"
+      ],
+      "quote": "This DigitalOcean Service Level Agreement (\u201cSLA\u201d) governs your use of DigitalOcean Droplets and applies separately to each Droplet you use.",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not name a Standard plan or any plan tiers; the SLA applies to Droplets generally."
+    },
+    "uptime_commitment_pct": {
+      "value": "99.99",
+      "quote": "DigitalOcean commits to a Monthly Uptime Percentage of 99.99% for each individual Droplet instance.",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "billing_cycle",
+      "quote": "The percentage of time a droplet resource is available during a monthly billing cycle",
+      "section": "Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not specify a time zone for measuring the month."
+    },
+    "downtime_definition": {
+      "value": {
+        "kind": "availability_minutes",
+        "interval_seconds": 60,
+        "error_threshold_pct": null,
+        "description": "Monthly Uptime Percentage is (Total minutes in the month - Minutes of Unavailability) / Total minutes in the month, measured per Droplet resource over a monthly billing cycle. The Unavailability definition list is not given in the source.",
+        "covered_experiences": []
+      },
+      "quote": "Monthly Uptime Percentage: The percentage of time a droplet resource is available during a monthly billing cycle, calculated as: (Total minutes in the month - Minutes of Unavailability) / Total minutes in the month.",
+      "section": "Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "0",
+          "upper": "99.99",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "100"
+        }
+      ],
+      "quote": "| less than 99.99% | 100% |",
+      "section": "Service Credits table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "Service Credits apply only to charges incurred for the specific Droplet resources affected and are credited towards future invoices.",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": false,
+      "missing_reason": "The source states a 100% service credit for uptime below 99.99% but does not state an explicit cap or its basis on total credits."
+    },
+    "min_credit": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source contains no minimum credit amount or threshold for issuing credits."
+    },
+    "exclusions": {
+      "value": null,
+      "quote": "This SLA does not cover Unavailability caused by:",
+      "section": "Exclusions",
+      "absent": false,
+      "missing_reason": "The source introduces an exclusions list but the list items are not included, so the specific exclusions cannot be determined."
+    },
+    "prerequisites": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not state any claim prerequisites such as a support ticket, fully paid account, production instance, or authorized requester."
+    },
+    "claim_window": {
+      "value": {
+        "kind": "billing_cycles_after",
+        "value": 2,
+        "timezone": null
+      },
+      "quote": "within two (2) billing cycles of the month when the downtime occurred",
+      "section": "Service Credit request paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "email",
+        "required_fields": [
+          "account_reference",
+          "affected_resources",
+          "incident_times"
+        ],
+        "subject_line": null
+      },
+      "quote": "To request a Service Credit, contact DigitalOcean at success[@digitalocean](/community/users/digitalocean).com within two (2) billing cycles of the month when the downtime occurred. Include the email address associated with your account, affected Droplet resource details, and outage dates/times.",
+      "section": "Service Credit request paragraph",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Service Credits apply only to charges incurred for the specific Droplet resources affected and are credited towards future invoices.",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "07d56205352e178c943d8242ed0a98b78fa5b510ce0909485d8ecc6060d5412b",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 3,
+  "service": "CPU Droplets",
+  "plan": "Standard",
+  "extracted_at": "2026-10-31T01:56:40.736049+00:00",
+  "calls": 3,
+  "conversion_notes": [],
+  "usage": {
+    "input_tokens": 10777,
+    "output_tokens": 1557
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": false,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": false,
+    "min_credit": false,
+    "exclusions": true,
+    "prerequisites": false,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "absent",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "verified",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "absent",
+    "exclusions": "missing",
+    "prerequisites": "absent",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0371,
+  "split": "tuning"
+}

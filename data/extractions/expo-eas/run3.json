@@ -1,0 +1,381 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "Expo",
+      "quote": "Response time describes how quickly an Expo team member reaches out to you to investigate the issue.",
+      "section": "Enterprise Support",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "EAS Build",
+        "EAS Submit",
+        "EAS Update",
+        "Enterprise Support Add-on"
+      ],
+      "quote": "Services covered by this SLA are EAS Build, EAS Submit, EAS Update, and the Enterprise Support Add-on.",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": "Enterprise",
+      "quote": "This Service Level Agreement (SLA) is applicable to our Enterprise plan services",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "uptime_commitment_pct": {
+      "value": "99.9",
+      "quote": "| Build, Submit, Update and Workflows | 99.9% monthly uptime |",
+      "section": "Service level table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "calendar_month",
+      "quote": "99.9% monthly uptime",
+      "section": "Service level table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source does not state a time zone for measuring the month."
+    },
+    "downtime_definition": {
+      "value": {
+        "kind": "availability_minutes",
+        "interval_seconds": 60,
+        "error_threshold_pct": "100",
+        "description": "Downtime is the total number of minutes during which a service is unavailable excluding outages caused by factors outside of our control, including, but not limited to, third-party vendors or other external impacts. A minute is unavailable if all requests throughout that minute return a 5xx HTTP error status or do not return a response.",
+        "covered_experiences": []
+      },
+      "quote": "A minute is considered unavailable if all requests throughout that minute return a 5xx HTTP error status (5XX) or do not return a response.",
+      "section": "Uptime definition",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "0",
+          "upper": "99.9",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "10"
+        },
+        {
+          "lower": "0",
+          "upper": "99",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "25"
+        }
+      ],
+      "quote": "| < 99.9% | 10% of the cost of your Enterprise plan for the affected month | [\u2026] | < 99% | 25% of the cost of your Enterprise plan for the affected month |",
+      "section": "Service credit table",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "other",
+      "quote": "Service credit is the percentage of your applicable monthly service fee that is credited to you for uptime below our listed service levels.",
+      "section": "Service credit",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": "Total monthly service credits granted to a maximum of 30% the cost of the Enterprise Support Add-on for the affected month.",
+      "section": "Service credit",
+      "absent": false,
+      "missing_reason": "The cap applies only to the Enterprise Support Add-on response credits, not to uptime credits for EAS services; no cap stated for uptime credits."
+    },
+    "min_credit": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The source contains no minimum credit amount or threshold."
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "other",
+          "description": "Outages caused by factors outside of our control, including but not limited to third-party vendors or other external impacts, are excluded from Downtime.",
+          "machine_checkable": false
+        }
+      ],
+      "quote": "Downtime is the total number of minutes during which a service is unavailable excluding outages caused by factors outside of our control, including, but not limited to, third-party vendors or other external impacts.",
+      "section": "Downtime definition",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "other"
+      ],
+      "quote": "This Service Level Agreement (SLA) is applicable to our Enterprise plan services; no SLA is provided for our Free, Starter, or Production plan services.",
+      "section": "Introduction",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "other",
+        "value": 30,
+        "timezone": null
+      },
+      "quote": "within 30 days of the incident",
+      "section": "Claims",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "written claim through the contact page",
+        "required_fields": [
+          "incident_times",
+          "other"
+        ],
+        "subject_line": null
+      },
+      "quote": "Claims for service credit need to be made in writing through our [contact page](/contact) and within 30 days of the incident and must include all necessary information for us to validate the claim. Information we'll need might include a detailed description of the incident, date, time, logs, etc.",
+      "section": "Claims",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "Credits are applied to future service fees, are applied within 60 days from request, and are your sole and exclusive remedy for any performance or availability issues for any service under this agreement and this SLA.",
+      "section": "Service credits",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "dcac20a41a8acf2a5fedf323c552788b0ef5a065f72a1155908c714104dc5a5d",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 3,
+  "service": "EAS",
+  "plan": "Enterprise",
+  "extracted_at": "2026-10-31T01:59:07.605297+00:00",
+  "calls": 3,
+  "conversion_notes": [],
+  "raw_output": {
+    "commitment": {
+      "vendor": {
+        "quote": "Response time describes how quickly an Expo team member reaches out to you to investigate the issue.",
+        "section": "Enterprise Support",
+        "absent": false,
+        "missing_reason": "",
+        "value": "Expo"
+      },
+      "covered_services": {
+        "quote": "Services covered by this SLA are EAS Build, EAS Submit, EAS Update, and the Enterprise Support Add-on.",
+        "section": "Introduction",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          "EAS Build",
+          "EAS Submit",
+          "EAS Update",
+          "Enterprise Support Add-on"
+        ]
+      },
+      "plan": {
+        "quote": "This Service Level Agreement (SLA) is applicable to our Enterprise plan services",
+        "section": "Introduction",
+        "absent": false,
+        "missing_reason": "",
+        "value": "Enterprise"
+      },
+      "uptime_commitment_pct": {
+        "quote": "| Build, Submit, Update and Workflows | 99.9% monthly uptime |",
+        "section": "Service level table",
+        "absent": false,
+        "missing_reason": "",
+        "value": "99.9"
+      },
+      "measurement_period": {
+        "quote": "99.9% monthly uptime",
+        "section": "Service level table",
+        "absent": false,
+        "missing_reason": "",
+        "value": "calendar_month"
+      },
+      "timezone": {
+        "quote": "",
+        "section": "",
+        "absent": true,
+        "missing_reason": "The source does not state a time zone for measuring the month.",
+        "value": null
+      },
+      "downtime_definition": {
+        "quote": "A minute is considered unavailable if all requests throughout that minute return a 5xx HTTP error status (5XX) or do not return a response.",
+        "section": "Uptime definition",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "kind": "availability_minutes",
+          "interval_seconds": 60,
+          "error_threshold_pct": "100",
+          "description": "Downtime is the total number of minutes during which a service is unavailable excluding outages caused by factors outside of our control, including, but not limited to, third-party vendors or other external impacts. A minute is unavailable if all requests throughout that minute return a 5xx HTTP error status or do not return a response.",
+          "covered_experiences": []
+        }
+      },
+      "credit_tiers": {
+        "quote": "| < 99.9% | 10% of the cost of your Enterprise plan for the affected month | [\u2026] | < 99% | 25% of the cost of your Enterprise plan for the affected month |",
+        "section": "Service credit table",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          {
+            "lower": "0",
+            "upper": "99.9",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "10"
+          },
+          {
+            "lower": "0",
+            "upper": "99",
+            "lower_inclusive": true,
+            "upper_inclusive": false,
+            "credit_pct": "25"
+          }
+        ]
+      }
+    },
+    "pricing": {
+      "credit_basis": {
+        "quote": "Service credit is the percentage of your applicable monthly service fee that is credited to you for uptime below our listed service levels.",
+        "section": "Service credit",
+        "absent": false,
+        "missing_reason": "",
+        "value": "other"
+      },
+      "credit_cap": {
+        "quote": "Total monthly service credits granted to a maximum of 30% the cost of the Enterprise Support Add-on for the affected month.",
+        "section": "Service credit",
+        "absent": false,
+        "missing_reason": "The cap applies only to the Enterprise Support Add-on response credits, not to uptime credits for EAS services; no cap stated for uptime credits.",
+        "value": null
+      },
+      "min_credit": {
+        "quote": "",
+        "section": "",
+        "absent": true,
+        "missing_reason": "The source contains no minimum credit amount or threshold.",
+        "value": null
+      },
+      "exclusions": {
+        "quote": "Downtime is the total number of minutes during which a service is unavailable excluding outages caused by factors outside of our control, including, but not limited to, third-party vendors or other external impacts.",
+        "section": "Downtime definition",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          {
+            "kind": "other",
+            "description": "Outages caused by factors outside of our control, including but not limited to third-party vendors or other external impacts, are excluded from Downtime.",
+            "machine_checkable": false
+          }
+        ]
+      }
+    },
+    "process": {
+      "prerequisites": {
+        "quote": "This Service Level Agreement (SLA) is applicable to our Enterprise plan services; no SLA is provided for our Free, Starter, or Production plan services.",
+        "section": "Introduction",
+        "absent": false,
+        "missing_reason": "",
+        "value": [
+          "other"
+        ]
+      },
+      "claim_window": {
+        "quote": "within 30 days of the incident",
+        "section": "Claims",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "kind": "other",
+          "value": 30,
+          "timezone": ""
+        }
+      },
+      "claim_procedure": {
+        "quote": "Claims for service credit need to be made in writing through our [contact page](/contact) and within 30 days of the incident and must include all necessary information for us to validate the claim. Information we'll need might include a detailed description of the incident, date, time, logs, etc.",
+        "section": "Claims",
+        "absent": false,
+        "missing_reason": "",
+        "value": {
+          "channel": "written claim through the contact page",
+          "required_fields": [
+            "incident_times",
+            "other"
+          ],
+          "subject_line": ""
+        }
+      },
+      "remedy_form": {
+        "quote": "Credits are applied to future service fees, are applied within 60 days from request, and are your sole and exclusive remedy for any performance or availability issues for any service under this agreement and this SLA.",
+        "section": "Service credits",
+        "absent": false,
+        "missing_reason": "",
+        "value": "service_credit"
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 11173,
+    "output_tokens": 1726
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": true,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": true,
+    "min_credit": false,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "verified",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "verified",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "absent",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0396,
+  "split": "held_out"
+}

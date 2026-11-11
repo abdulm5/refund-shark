@@ -1,0 +1,277 @@
+{
+  "researched_on": "2026-10-29",
+  "review_status": "machine_researched_not_human_gold",
+  "purpose": "Source inventory and implementation research, not completed extraction evaluation",
+  "sources": [
+    {
+      "id": "atlassian",
+      "vendor": "Atlassian",
+      "service": "Jira / Confluence Cloud",
+      "url": "https://www.atlassian.com/legal/sla",
+      "supplemental_url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+      "dataset_split": "tuning",
+      "effective_date": "2026-04-30",
+      "period": "calendar_month",
+      "period_timezone": "UTC",
+      "commitment_pct_by_plan": {
+        "Premium": "99.9",
+        "Enterprise": "99.95"
+      },
+      "premium_tiers": [
+        {
+          "lower_inclusive": "99.0",
+          "upper_exclusive": "99.9",
+          "credit_pct": "10"
+        },
+        {
+          "lower_inclusive": "95.0",
+          "upper_exclusive": "99.0",
+          "credit_pct": "25"
+        },
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "95.0",
+          "credit_pct": "50"
+        }
+      ],
+      "enterprise_additional_tier": {
+        "lower_inclusive": "99.9",
+        "upper_exclusive": "99.95",
+        "credit_pct": "5"
+      },
+      "metric": "Customer request error rate greater than 5% in a minute, for covered experiences.",
+      "metric_quote": "“Downtime Minute” occurs when the Error Rate in a given minute is greater than 5%.",
+      "metric_section": "Appendix B / Definitions",
+      "fee_basis": "Affected product monthly fees; bundled SKU allocations determined by Atlassian.",
+      "cap": {
+        "pct": "100",
+        "basis": "affected product amount on the future receiving invoice",
+        "scope": "aggregate credits applied to that invoice"
+      },
+      "deadline": {
+        "kind": "days_after_calendar_month_end",
+        "days": 15,
+        "timezone": null
+      },
+      "prerequisites": [
+        "Production eligible plan",
+        "Support ticket opened during incident",
+        "Account fully paid without overdue payments or disputes",
+        "Covered browser experience affected; specific exceptions in Appendix A"
+      ],
+      "maintenance_exclusion": "Routine scheduled or reasonable emergency maintenance under the referenced maintenance policy.",
+      "remedy": "future_service_credit",
+      "sections": {
+        "eligibility": "2.1",
+        "issuance_and_cap": "2.2",
+        "exclusions": "3",
+        "covered_experiences": "Appendix A",
+        "tiers_and_metric": "Appendix B"
+      },
+      "unsupported_without_evidence": [
+        "Customer request logs",
+        "Support evidence",
+        "Receiving-invoice cap basis",
+        "Applicable negotiated agreement"
+      ],
+      "supplemental_id": "atlassian-compensation"
+    },
+    {
+      "id": "github",
+      "vendor": "GitHub",
+      "service": "Enterprise Cloud",
+      "url": "https://github.com/customer-terms/github-online-services-sla",
+      "dataset_split": "tuning",
+      "version": "June 2026",
+      "period": "calendar_quarter",
+      "commitment_pct": "99.9",
+      "tiers": [
+        {
+          "lower_inclusive": "99.5",
+          "upper_exclusive": "99.9",
+          "credit_pct": "5"
+        },
+        {
+          "lower_inclusive": "99.0",
+          "upper_exclusive": "99.5",
+          "credit_pct": "10"
+        },
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "99.0",
+          "credit_pct": "25"
+        }
+      ],
+      "metric": "Feature error rate above 5% per minute or unavailability determined by GitHub monitoring. Actions and Packages have separate metrics.",
+      "deadline": {
+        "kind": "days_after_quarter_end",
+        "days": 30
+      },
+      "claim_channel": "GitHub Support for direct purchases; Microsoft support for Microsoft purchases.",
+      "notes": "Do not use deprecated pre-2021 SLA. Outstanding invoices must be paid; scheduled maintenance definition requires notice except emergencies. Cap expressed as 90 paid-service days, not a generic monthly percentage."
+    },
+    {
+      "id": "cloudflare",
+      "vendor": "Cloudflare",
+      "service": "Business",
+      "url": "https://www.cloudflare.com/business-sla/",
+      "dataset_split": "tuning",
+      "commitment_pct": "100",
+      "metric": "Outage minutes multiplied by affected unique-visitor ratio, divided by scheduled availability minutes.",
+      "fee_basis": "Monthly recurring service fees",
+      "deadline": "End of billing month following affected month; support notification also required within five business days of incident.",
+      "cap": "Twelve-month aggregate limited to one month of cumulative monthly service fees.",
+      "notes": "Requires unique-visitor data unavailable from a public status feed. No percentage tier table. Scheduled availability denominator excludes customer-planned downtime and force majeure."
+    },
+    {
+      "id": "aws-waf",
+      "vendor": "AWS",
+      "service": "WAF",
+      "url": "https://aws.amazon.com/waf/sla/",
+      "dataset_split": "tuning",
+      "commitment_pct": "99.95",
+      "period": "monthly_billing_cycle",
+      "metric": "Mean of five-minute request inspection availability, evaluated per region.",
+      "tiers": [
+        {
+          "lower_inclusive": "99.0",
+          "upper_exclusive": "99.95",
+          "credit_pct": "10"
+        },
+        {
+          "lower_inclusive": "95.0",
+          "upper_exclusive": "99.0",
+          "credit_pct": "25"
+        },
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "95.0",
+          "credit_pct": "100"
+        }
+      ],
+      "minimum_credit": {
+        "amount": "1.00",
+        "currency": "USD",
+        "operator": ">"
+      },
+      "deadline": "End of second billing cycle following incident",
+      "required_subject": "SLA Credit Request",
+      "required_evidence": [
+        "Billing cycle and region",
+        "Five-minute availability intervals",
+        "Redacted request logs"
+      ],
+      "notes": "Public outage duration is insufficient; host-service request inspection logs are required."
+    },
+    {
+      "id": "aws-cloudfront",
+      "vendor": "AWS",
+      "service": "CloudFront",
+      "url": "https://aws.amazon.com/cloudfront/sla/",
+      "dataset_split": "tuning",
+      "version": "May 5, 2022",
+      "commitment_pct": "99.9",
+      "period": "monthly_billing_cycle",
+      "metric": "100% minus mean five-minute internal-server-error rates for the account.",
+      "tiers": [
+        {
+          "lower_inclusive": "99.0",
+          "upper_exclusive": "99.9",
+          "credit_pct": "10"
+        },
+        {
+          "lower_inclusive": "95.0",
+          "upper_exclusive": "99.0",
+          "credit_pct": "25"
+        },
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "95.0",
+          "credit_pct": "100"
+        }
+      ],
+      "minimum_credit": {
+        "amount": "1.00",
+        "currency": "USD",
+        "operator": ">"
+      },
+      "deadline": "End of second billing cycle following incident",
+      "required_subject": "SLA Credit Request",
+      "notes": "Request logs required. SLA includes an exclusion for a non-S3 origin; account configuration must be known."
+    },
+    {
+      "id": "google-cloud-dns",
+      "vendor": "Google Cloud",
+      "service": "Cloud DNS",
+      "url": "https://cloud.google.com/dns/sla",
+      "dataset_split": "held_out",
+      "commitment_pct": "100",
+      "period": "month",
+      "metric": "All authoritative name servers unable to answer; uninterrupted outages shorter than 60 seconds do not count.",
+      "tiers": [
+        {
+          "lower_inclusive": "99.5",
+          "upper_exclusive": "100",
+          "credit_pct": "10"
+        },
+        {
+          "lower_inclusive": "95",
+          "upper_exclusive": "99.5",
+          "credit_pct": "25"
+        },
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "95",
+          "credit_pct": "50"
+        }
+      ],
+      "cap_pct": "50",
+      "deadline": "Within 30 days of becoming eligible; anchor needs interpretation for a concrete case.",
+      "notes": "Name-server query failure logs required. Credit applies to future service use within 60 days after request. No model extraction results have been inspected."
+    },
+    {
+      "id": "expo-eas",
+      "vendor": "Expo",
+      "service": "EAS Enterprise",
+      "url": "https://expo.dev/services/sla",
+      "dataset_split": "held_out",
+      "version": "July 29, 2025",
+      "commitment_pct": "99.9",
+      "period": "month",
+      "metric": "Every request in a minute yields 5xx or no response; external causes excluded.",
+      "tiers_as_written": [
+        {
+          "upper_exclusive": "99.9",
+          "credit_pct": "10"
+        },
+        {
+          "upper_exclusive": "99",
+          "credit_pct": "25"
+        }
+      ],
+      "deadline": "Within 30 days of incident through contact page",
+      "notes": "Enterprise only; tiers overlap as written and require precedence interpretation. Support add-on has separate 30% cap, not a generic EAS uptime cap. No model extraction results have been inspected."
+    },
+    {
+      "id": "digitalocean-droplets",
+      "vendor": "DigitalOcean",
+      "service": "CPU Droplets",
+      "url": "https://www.digitalocean.com/sla/cpu-droplets",
+      "dataset_split": "tuning",
+      "version": "June 3, 2025",
+      "commitment_pct": "99.99",
+      "period": "monthly_billing_cycle",
+      "tiers": [
+        {
+          "lower_inclusive": "0",
+          "upper_exclusive": "99.99",
+          "credit_pct": "100"
+        }
+      ],
+      "metric": "Per-instance connectivity or root-disk access loss attributable to DigitalOcean infrastructure.",
+      "fee_basis": "Affected Droplet resources only",
+      "deadline": "Within two billing cycles of affected month",
+      "notes": "Scheduled maintenance and customer-initiated downtime excluded. Account email, affected resources, and outage timing required; future credits only. Good eighth source because interval-based evidence is closer to MVP capabilities."
+    }
+  ]
+}

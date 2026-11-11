@@ -1,0 +1,87 @@
+{
+  "note": "Verbatim line excerpts of public pages, kept for citation checks. Raw pages stay in the ignored cache.",
+  "sources": [
+    {
+      "id": "atlassian-sla",
+      "title": "Atlassian Service Level Agreement",
+      "url": "https://www.atlassian.com/legal/sla",
+      "retrieved_at": "2026-10-30T05:22:48.017142+00:00",
+      "effective_date": "2026-04-30",
+      "raw_sha256": "1660fb313bda76e8860b2dd611f7d739015921f52c28604508139bf19f2547c5",
+      "cache_path": ".cache/research/atlassian.html",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "text_sha256": "95d7ddf06baff2d47614ad04917c3c8bd29f15cd6258c8ded6dfc1b1ea28b98e",
+      "excerpt_path": "data/sources/atlassian-sla.excerpt.txt",
+      "excerpt_sha256": "b2e8de0bc3005e2e839fe458fec92e63847bfe073f97ab4b17d07e380d81c277",
+      "ranges": [
+        [
+          "For Eligible Cloud Products",
+          "99.95%"
+        ],
+        [
+          "2. Service Credits",
+          "2.2. Issuance."
+        ],
+        [
+          "3. Exclusions",
+          "Customer is not entitled"
+        ],
+        [
+          "Appendix A",
+          "View Board"
+        ],
+        [
+          "Notes: * Except for Bitbucket",
+          "Notes: * Except for Bitbucket"
+        ],
+        [
+          "Appendix B",
+          "Notes: * Percentage"
+        ],
+        [
+          "Calculation",
+          "The monthly uptime percentage indicated"
+        ],
+        [
+          "Definitions",
+          "“Error Rate” means"
+        ]
+      ]
+    },
+    {
+      "id": "atlassian-compensation",
+      "title": "Atlassian Support: Service Level Agreement for Atlassian cloud apps",
+      "url": "https://support.atlassian.com/subscriptions-and-billing/docs/service-level-agreement-for-atlassian-cloud-products/",
+      "retrieved_at": "2026-10-30T05:22:49.304399+00:00",
+      "effective_date": null,
+      "raw_sha256": "719589475157c7547b98f716256e03a6954972503f000283f7a767a223245f7c",
+      "cache_path": ".cache/research/atlassian-compensation.html",
+      "parser": "trafilatura 2.3.1 (txt, tables, links)",
+      "text_sha256": "a11036507cf0db09181348f092a51a890fa75e0c844f3f26b1e47ded5ea9e050",
+      "excerpt_path": "data/sources/atlassian-compensation.excerpt.txt",
+      "excerpt_sha256": "1530ab945dcfc7fd0a7cb1284795ab70860c74d7043421f84aefdc2fed1df5da",
+      "ranges": [
+        [
+          "Process to get compensation",
+          "You can only request SLA compensation"
+        ],
+        [
+          "You can submit a request for an app",
+          "- Site admin for the app"
+        ],
+        [
+          "To submit a request:",
+          "If multiple incidents occur"
+        ],
+        [
+          "Receive compensation",
+          "After submitting your request"
+        ],
+        [
+          "If your bill is on monthly payments",
+          "If you pay your bill annually"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "note": "Verbatim lines of Ramp's public Developer API reference that the spend import relies on. Each '## block | url' header is ours; every other line is copied from that document.",
+  "documents": [
+    {
+      "id": "api",
+      "url": "https://docs.ramp.com/llms-api.txt",
+      "retrieved_at": "2026-10-31T23:19:58Z",
+      "sha256": "6af9481568b68f2d5ccd2b3cff46477e9aa75431490cae171a3149a3f049df8c",
+      "cache_path": ".cache/research/ramp/llms-api.txt"
+    },
+    {
+      "id": "Quickstart",
+      "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+      "retrieved_at": "2026-10-31T23:24:02Z",
+      "sha256": "581a32b166ecf67a51a57a8a9f4299eb23ebd4bfb4143f9fb9d90254f6fcf542",
+      "cache_path": ".cache/research/ramp/getting-started.txt"
+    },
+    {
+      "id": "Pagination",
+      "url": "https://docs.ramp.com/llms-guides/pagination.txt",
+      "retrieved_at": "2026-10-31T23:24:02Z",
+      "sha256": "4d0bf6972de8445e20a453c41f36e08db8ae4880dfea7d17fe1782e42b58f1f0",
+      "cache_path": ".cache/research/ramp/pagination.txt"
+    },
+    {
+      "id": "Authorization",
+      "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+      "retrieved_at": "2026-10-31T23:24:02Z",
+      "sha256": "7d5375e5313532bf0d2dda04e17f03acbf4167ea3ba9abc7384a00db8c36b8fb",
+      "cache_path": ".cache/research/ramp/authorization.txt"
+    }
+  ],
+  "excerpt_path": "data/sources/ramp-developer-api.excerpt.txt",
+  "excerpt_sha256": "f527054bc40732ec95c357c823ca90c482359a36797159e2831ed3f029591c42"
+}

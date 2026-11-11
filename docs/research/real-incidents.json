@@ -1,0 +1,459 @@
+{
+  "research_date": "2026-10-29",
+  "incidents": [
+    {
+      "id": "ws0393rxcgyl",
+      "product": "jira",
+      "source_url": "https://jira-software.status.atlassian.com/incidents/ws0393rxcgyl",
+      "api_url": "https://jira-software.status.atlassian.com/api/v2/incidents/ws0393rxcgyl.json",
+      "name": "Disrupted JIRA availability in US East",
+      "impact": "critical",
+      "started_at": "2026-09-03T15:57:31.693Z",
+      "monitoring_at": "2026-09-03T16:35:58.000Z",
+      "resolved_at": "2026-09-03T17:02:02.867Z",
+      "updates": [
+        {
+          "id": "wpqw1s5zqh3r",
+          "status": "investigating",
+          "created_at": "2026-09-03T15:57:31.948Z",
+          "display_at": "2026-09-03T15:57:31.948Z",
+          "components": [
+            {
+              "code": "b01bgtvb4q2j",
+              "name": "Create and edit",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "sv1xfn9br170",
+              "name": "Search",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "yzll2534txvb",
+              "name": "Notifications",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "sftzwrxsjrry",
+              "name": "Administration",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "50wvm3nm8nd3",
+              "name": "Marketplace",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "39kyw28g27ws",
+              "name": "Mobile",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "y76gc542s6nd",
+              "name": "Authentication and User Management",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "0hjw3h7qpkc6",
+              "name": "Purchasing & Licensing",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "fgq39r8cz7mj",
+              "name": "Signup",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            },
+            {
+              "code": "9hyf9lm0fswd",
+              "name": "Automation for Jira",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ]
+        },
+        {
+          "id": "wbwr9jnt8yzd",
+          "status": "monitoring",
+          "created_at": "2026-09-03T16:35:58.621Z",
+          "display_at": "2026-09-03T16:35:58.000Z",
+          "components": [
+            {
+              "code": "b01bgtvb4q2j",
+              "name": "Create and edit",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "sv1xfn9br170",
+              "name": "Search",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "yzll2534txvb",
+              "name": "Notifications",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "sftzwrxsjrry",
+              "name": "Administration",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "50wvm3nm8nd3",
+              "name": "Marketplace",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "39kyw28g27ws",
+              "name": "Mobile",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "y76gc542s6nd",
+              "name": "Authentication and User Management",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "0hjw3h7qpkc6",
+              "name": "Purchasing & Licensing",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "fgq39r8cz7mj",
+              "name": "Signup",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "9hyf9lm0fswd",
+              "name": "Automation for Jira",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ]
+        },
+        {
+          "id": "v6wk2tpw4w5x",
+          "status": "resolved",
+          "created_at": "2026-09-03T17:02:02.867Z",
+          "display_at": "2026-09-03T17:02:02.867Z",
+          "components": [
+            {
+              "code": "b01bgtvb4q2j",
+              "name": "Create and edit",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "sv1xfn9br170",
+              "name": "Search",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "yzll2534txvb",
+              "name": "Notifications",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "sftzwrxsjrry",
+              "name": "Administration",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "50wvm3nm8nd3",
+              "name": "Marketplace",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "39kyw28g27ws",
+              "name": "Mobile",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "y76gc542s6nd",
+              "name": "Authentication and User Management",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0hjw3h7qpkc6",
+              "name": "Purchasing & Licensing",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "fgq39r8cz7mj",
+              "name": "Signup",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9hyf9lm0fswd",
+              "name": "Automation for Jira",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ]
+        },
+        {
+          "id": "xy2dmbl6kvv1",
+          "status": "postmortem",
+          "created_at": "2026-09-10T18:15:33.771Z",
+          "display_at": null,
+          "components": null
+        }
+      ],
+      "feed_sha256": "c53f5f48d984522f992f4a1fa546510bc3e970dd41535aae8e529236449a4035",
+      "data_kind": "real_public_incident",
+      "customer_impact_verified": false,
+      "support_ticket_verified": false,
+      "invoice_verified": false,
+      "coverage": "Public feed only; no assertion of complete customer-period coverage.",
+      "recommended_role": "historical_needs_review",
+      "postmortem_impact_window": {
+        "start": "2026-09-03T14:52:00Z",
+        "end": "2026-09-03T17:02:00Z",
+        "minutes": 130,
+        "scope": "Some Jira/JSM customers in US East; intermittent covered-experience failures."
+      },
+      "public_update_estimate": {
+        "start": "2026-09-03T15:57:31.948Z",
+        "end": "2026-09-03T16:35:58Z",
+        "minutes": "38.4342",
+        "end_rule": "monitoring display_at",
+        "contractual_downtime": false
+      },
+      "replay_as_of": "2026-10-08T12:00:00Z",
+      "claim_deadline_date": "2026-10-15",
+      "deadline_timezone": "not explicit in claim clause",
+      "current_date_outcome": "window_closed",
+      "notes": "Public update interval is shorter than postmortem impact; neither establishes per-customer minute error rates. First recovery reportedly began 16:15 UTC."
+    },
+    {
+      "id": "1yh59bb4lw20",
+      "product": "jira",
+      "source_url": "https://jira-software.status.atlassian.com/incidents/1yh59bb4lw20",
+      "api_url": "https://jira-software.status.atlassian.com/api/v2/incidents/1yh59bb4lw20.json",
+      "name": "Jira - Project Sidebar Loading Degradation",
+      "impact": "minor",
+      "started_at": "2026-10-21T14:28:49.560Z",
+      "monitoring_at": "2026-10-21T15:01:51.735Z",
+      "resolved_at": "2026-10-21T15:45:09.455Z",
+      "updates": [
+        {
+          "id": "08tdwcs67nvn",
+          "status": "investigating",
+          "created_at": "2026-10-21T14:28:49.659Z",
+          "display_at": "2026-10-21T14:28:49.659Z",
+          "components": [
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ]
+        },
+        {
+          "id": "yn8m9tkv3086",
+          "status": "monitoring",
+          "created_at": "2026-10-21T15:01:51.735Z",
+          "display_at": "2026-10-21T15:01:51.735Z",
+          "components": [
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ]
+        },
+        {
+          "id": "csxdxr2bglsz",
+          "status": "resolved",
+          "created_at": "2026-10-21T15:45:09.455Z",
+          "display_at": "2026-10-21T15:45:09.455Z",
+          "components": [
+            {
+              "code": "jmgfbtr0k28j",
+              "name": "Viewing content",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ]
+        }
+      ],
+      "feed_sha256": "c53f5f48d984522f992f4a1fa546510bc3e970dd41535aae8e529236449a4035",
+      "data_kind": "real_public_incident",
+      "customer_impact_verified": false,
+      "support_ticket_verified": false,
+      "invoice_verified": false,
+      "coverage": "Public feed only; no assertion of complete customer-period coverage.",
+      "recommended_role": "current_needs_review",
+      "public_update_estimate": {
+        "start": "2026-10-21T14:28:49.659Z",
+        "end": "2026-10-21T15:01:51.735Z",
+        "minutes": "33.0346",
+        "contractual_downtime": false
+      },
+      "notes": "Historical status was degraded_performance, not major_outage. Timeouts/navigation issues need customer-level and covered-experience verification."
+    },
+    {
+      "id": "n0kn9r01zyd4",
+      "product": "confluence",
+      "source_url": "https://confluence.status.atlassian.com/incidents/n0kn9r01zyd4",
+      "api_url": "https://confluence.status.atlassian.com/api/v2/incidents/n0kn9r01zyd4.json",
+      "name": "Job processing and scheduling is degraded affecting multiple Atlassian products",
+      "impact": "major",
+      "started_at": "2026-10-01T02:55:55.918Z",
+      "monitoring_at": null,
+      "resolved_at": "2026-10-01T07:51:30.367Z",
+      "updates": [
+        {
+          "id": "h1qqyngn1f3p",
+          "status": "investigating",
+          "created_at": "2026-10-01T02:55:56.047Z",
+          "display_at": "2026-10-01T02:55:56.047Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ]
+        },
+        {
+          "id": "k045csrp6ktp",
+          "status": "identified",
+          "created_at": "2026-10-01T03:47:45.775Z",
+          "display_at": "2026-10-01T03:47:45.775Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ]
+        },
+        {
+          "id": "9rwd17n75fvx",
+          "status": "identified",
+          "created_at": "2026-10-01T04:03:57.604Z",
+          "display_at": "2026-10-01T04:03:57.604Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ]
+        },
+        {
+          "id": "xpf6f04xfg49",
+          "status": "identified",
+          "created_at": "2026-10-01T05:00:54.989Z",
+          "display_at": "2026-10-01T05:00:54.989Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ]
+        },
+        {
+          "id": "vd74v2pr1s3c",
+          "status": "identified",
+          "created_at": "2026-10-01T07:01:47.575Z",
+          "display_at": "2026-10-01T07:01:47.575Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ]
+        },
+        {
+          "id": "vqz884d1q9sk",
+          "status": "resolved",
+          "created_at": "2026-10-01T07:51:30.367Z",
+          "display_at": "2026-10-01T07:51:30.367Z",
+          "components": [
+            {
+              "code": "fsg199jjm9nd",
+              "name": "Confluence Automations",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ]
+        },
+        {
+          "id": "gyxdwrhcdmvt",
+          "status": "postmortem",
+          "created_at": "2026-10-09T18:24:30.659Z",
+          "display_at": null,
+          "components": null
+        }
+      ],
+      "feed_sha256": "47552866c4def632aaab66c5a9facc6f0666c4a9fbc3f78ec8e9b6cc962df9fd",
+      "data_kind": "real_public_incident",
+      "customer_impact_verified": false,
+      "support_ticket_verified": false,
+      "invoice_verified": false,
+      "coverage": "Public feed only; no assertion of complete customer-period coverage.",
+      "recommended_role": "out_of_scope_refusal_for_confluence",
+      "postmortem_impact_window": {
+        "start": "2026-10-01T01:00:00Z",
+        "end": "2026-10-01T07:25:00Z",
+        "minutes": 385
+      },
+      "postmortem_excerpt": "interactive product use was not affected.",
+      "notes": "Reported Confluence effect was missed calendar reminders. Do not price this as unavailable covered browser experiences."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+## Fetch the company information · /developer/v1/business | https://docs.ramp.com/llms-api.txt
+title: Fetch the company information
+path: /developer/v1/business
+[…]
+business_name_legal?: string
+business_name_on_card?: string
+
+## List vendors · /developer/v1/vendors | https://docs.ramp.com/llms-api.txt
+title: List vendors
+path: /developer/v1/vendors
+[…]
+data: {
+[…]
+billing_frequency?: 'ANNUAL' | 'MONTHLY' | 'MULTIPLE' | 'NA' | 'OTHER' | 'QUARTERLY' | 'ROLLING' | 'TBD' | 'TWICE_A_YEAR'
+[…]
+is_active: boolean
+[…]
+name: string
+[…]
+page: {
+next: string | null
+
+## List transactions · /developer/v1/transactions | https://docs.ramp.com/llms-api.txt
+title: List transactions
+path: /developer/v1/transactions
+description: This endpoint supports filtering and ordering. If state is not set, all transactions except declined transactions will be returned. Note that setting multiple ordering parameters is unsupported.
+[…]
+data: {
+[…]
+merchant_name?: string | null
+[…]
+state?: 'ALL' | 'CLEARED' | 'COMPLETION' | 'DECLINED' | 'ERROR' | 'PENDING' | 'PENDING_INITIATION'
+[…]
+user_transaction_time?: string /* date */
+[…]
+page: {
+next: string | null
+
+## Pagination | https://docs.ramp.com/llms-guides/pagination.txt
+Use the complete URL in the `next` field to request the next page. The URL includes the `start` cursor and preserves the other query parameters required for the current result set. Treat the cursor as opaque instead of constructing or changing it yourself.
+[…]
+curl "https://api.ramp.com/developer/v1/transactions?page_size=100" \
+
+## Quickstart | https://docs.ramp.com/llms-guides/getting-started.txt
+| Production | `https://api.ramp.com` | `https://app.ramp.com` |
+| Sandbox (demo) | `https://demo-api.ramp.com` | `https://demo.ramp.com` |
+[…]
+Add the header `Authorization: Bearer <YOUR_TOKEN_HERE>` and make a GET request to `{environment-url}/developer/v1/transactions`.
+
+## Authorization | https://docs.ramp.com/llms-guides/authorization.txt
+| `business:read` | Business profile | Access business information and settings |
+[…]
+| `transactions:read` | Transactions | Access transaction data and history |
+[…]
+| `vendors:read` | Vendors | View vendor information and payment details |

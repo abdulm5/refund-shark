@@ -1,0 +1,250 @@
+{
+  "terms": {
+    "vendor": {
+      "value": "AWS",
+      "quote": "This AWS WAF Service Level Agreement (\u201cSLA\u201d) is a policy governing the use of AWS WAF",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "covered_services": {
+      "value": [
+        "AWS WAF"
+      ],
+      "quote": "This AWS WAF Service Level Agreement (\u201cSLA\u201d) is a policy governing the use of AWS WAF",
+      "section": "Preamble",
+      "absent": false,
+      "missing_reason": null
+    },
+    "plan": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not mention a plan named Standard or any plan tiers; it applies to AWS WAF generally."
+    },
+    "uptime_commitment_pct": {
+      "value": "99.95",
+      "quote": "with a Monthly Uptime Percentage for each AWS region, during any monthly billing cycle, of at least 99.95% (the \u201cService Commitment\u201d)",
+      "section": "Service Commitment",
+      "absent": false,
+      "missing_reason": null
+    },
+    "measurement_period": {
+      "value": "billing_cycle",
+      "quote": "during any monthly billing cycle",
+      "section": "Service Commitment",
+      "absent": false,
+      "missing_reason": null
+    },
+    "timezone": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": true,
+      "missing_reason": "The SLA does not specify a time zone."
+    },
+    "downtime_definition": {
+      "value": {
+        "kind": "request_error_rate",
+        "interval_seconds": 300,
+        "error_threshold_pct": null,
+        "description": "Availability per 5-minute interval is the percentage of Requests inspected by AWS WAF that do not fail with Errors (Requests AWS WAF failed to inspect, as reported by Host Services in access logs). Intervals with no Requests are assumed 100% available. Monthly Uptime Percentage per AWS region is the average of Availability across all 5-minute intervals in a monthly billing cycle, excluding downtime resulting from AWS WAF SLA Exclusions.",
+        "covered_experiences": [
+          "Amazon CloudFront",
+          "AWS Application Load Balancer",
+          "Amazon API Gateway"
+        ]
+      },
+      "quote": "\u201cAvailability\u201d is calculated for each 5-minute interval as the percentage of Requests inspected by AWS WAF that do not fail with Errors and relate solely to AWS WAF Requests that are associated with underlying Host Services.[\u2026]An \u201cError\u201d is any Request that AWS WAF failed to inspect, reported by underlying Host Services in their respective access logs.[\u2026]\u201cMonthly Uptime Percentage\u201d for a given AWS region is calculated as the average of the Availability for all 5-minute intervals in a monthly billing cycle.",
+      "section": "Definitions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_tiers": {
+      "value": [
+        {
+          "lower": "99.0",
+          "upper": "99.95",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "10"
+        },
+        {
+          "lower": "95.0",
+          "upper": "99.0",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "25"
+        },
+        {
+          "lower": "0",
+          "upper": "95.0",
+          "lower_inclusive": true,
+          "upper_inclusive": false,
+          "credit_pct": "100"
+        }
+      ],
+      "quote": "| Less than 99.95% but greater than or equal to 99.0% | 10% | [\u2026]| Less than 99.0% but greater than or equal to 95.0% | 25% | [\u2026]| Less than 95.0% | 100% |",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_basis": {
+      "value": "affected_service",
+      "quote": "Service Credits are calculated as a percentage of the following charges paid by you for AWS WAF for the monthly billing cycle in which the Monthly Uptime Percentage for a given AWS region fell within the ranges set forth in the table below",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "credit_cap": {
+      "value": null,
+      "quote": null,
+      "section": null,
+      "absent": false,
+      "missing_reason": "The SLA states a maximum credit tier of 100% in the table but no explicit cap term or cap basis; the cap is ambiguous so it is not extracted as a cap."
+    },
+    "min_credit": {
+      "value": {
+        "amount": "1",
+        "inclusive": false
+      },
+      "quote": "Service Credits will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than one dollar ($1 USD).",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    },
+    "exclusions": {
+      "value": [
+        {
+          "kind": "force_majeure",
+          "description": "Factors outside of AWS's reasonable control, including any force majeure event or Internet access or related problems beyond the demarcation point of AWS WAF",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_breach",
+          "description": "Results from any voluntary actions or inactions from the customer",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Results from the customer not following the best practices described in the AWS WAF User Guide",
+          "machine_checkable": false
+        },
+        {
+          "kind": "customer_infrastructure",
+          "description": "Results from the customer's equipment, software or other technology",
+          "machine_checkable": false
+        },
+        {
+          "kind": "other",
+          "description": "Arising from AWS's suspension or termination of the customer's right to use AWS WAF in accordance with the Agreement",
+          "machine_checkable": false
+        }
+      ],
+      "quote": "(i) caused by factors outside of our reasonable control, including any force majeure event or Internet access or related problems beyond the demarcation point of AWS WAF; (ii) that result from any voluntary actions or inactions from you; (iii) that result from you not following the best practices described in the AWS WAF User Guide on the AWS Site; (iv) that result from your equipment, software or other technology; or (v) arising from our suspension or termination of your right to use AWS WAF in accordance with the Agreement",
+      "section": "AWS WAF SLA Exclusions",
+      "absent": false,
+      "missing_reason": null
+    },
+    "prerequisites": {
+      "value": [
+        "other"
+      ],
+      "quote": "To receive a Service Credit, you must submit a claim by [opening a case in the AWS Support Center](/support/createCase?type=account_billing).",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_window": {
+      "value": {
+        "kind": "billing_cycles_after",
+        "value": 2,
+        "timezone": null
+      },
+      "quote": "the credit request must be received by us by the end of the second billing cycle after which the incident occurred",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "claim_procedure": {
+      "value": {
+        "channel": "AWS Support Center case",
+        "required_fields": [
+          "period",
+          "affected_resources",
+          "incident_times",
+          "calculation",
+          "request_logs"
+        ],
+        "subject_line": "SLA Credit Request"
+      },
+      "quote": "To receive a Service Credit, you must submit a claim by [opening a case in the AWS Support Center](/support/createCase?type=account_billing). To be eligible, the credit request must be received by us by the end of the second billing cycle after which the incident occurred and must include: (i) the words \u201cSLA Credit Request\u201d in the subject line; [\u2026] (ii) the billing cycle and AWS regions with respect to which you are claiming Service Credits, together with the Monthly Uptime Percentage for that AWS region for the billing cycle and the specific dates, times, and Availabilities for each 5-minute interval with less than 100% Availability in that AWS region throughout the billing cycle; [\u2026] (iii) your Request logs that document the errors for your claimed outage",
+      "section": "Credit Request and Payment Procedures",
+      "absent": false,
+      "missing_reason": null
+    },
+    "remedy_form": {
+      "value": "service_credit",
+      "quote": "We will apply any Service Credits only against future AWS WAF payments otherwise due from you. [\u2026] Service Credits will not entitle you to any refund or other payment from AWS.",
+      "section": "Service Credits",
+      "absent": false,
+      "missing_reason": null
+    }
+  },
+  "source_hash": "5d8d5eca0ff2583049a611459358004f7ced76ac739385f4af0afadbfeac6ad5",
+  "model": "claude-sonnet-5-5",
+  "served_by": "claude-sonnet-5-5",
+  "prompt_version": "cited-terms-v4",
+  "schema_hash": "b6ce9f055329c5f130be1ddc8f8a9fcfad8a772a6d44aae7fe7022c6812bbda7",
+  "effort": "medium",
+  "run": 1,
+  "service": "AWS WAF",
+  "plan": "Standard",
+  "extracted_at": "2026-10-31T01:54:44.977711+00:00",
+  "calls": 3,
+  "conversion_notes": [],
+  "usage": {
+    "input_tokens": 14131,
+    "output_tokens": 2608
+  },
+  "citations": {
+    "vendor": true,
+    "covered_services": true,
+    "plan": false,
+    "uptime_commitment_pct": true,
+    "measurement_period": true,
+    "timezone": false,
+    "downtime_definition": true,
+    "credit_tiers": true,
+    "credit_basis": true,
+    "credit_cap": false,
+    "min_credit": true,
+    "exclusions": true,
+    "prerequisites": true,
+    "claim_window": true,
+    "claim_procedure": true,
+    "remedy_form": true
+  },
+  "term_status": {
+    "vendor": "verified",
+    "covered_services": "verified",
+    "plan": "absent",
+    "uptime_commitment_pct": "verified",
+    "measurement_period": "verified",
+    "timezone": "absent",
+    "downtime_definition": "verified",
+    "credit_tiers": "verified",
+    "credit_basis": "verified",
+    "credit_cap": "missing",
+    "min_credit": "verified",
+    "exclusions": "verified",
+    "prerequisites": "verified",
+    "claim_window": "verified",
+    "claim_procedure": "verified",
+    "remedy_form": "verified"
+  },
+  "mode": "live",
+  "cost_usd_estimate": 0.0543,
+  "split": "tuning"
+}
